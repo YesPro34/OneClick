@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\HomeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::resource('admin/users', 'UtilisateurController');
+
+Route::get('/admin/index', function(){
+    return view('admin.main_page.index');
+});
+
+
+// Route::get('/admin/ajouter-utilisateur', function(){
+//     return view('admin.main_page.users.create');
+// });
+
+
+
+
