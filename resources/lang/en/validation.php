@@ -142,8 +142,45 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'name' => [
+            'required' => 'le champ nom complet est obligatoire',
+       'min'=>'le champ nom complet doit avoir au moins :min caracteres',
+       'max'=>'le champ nom complet ne doit pas  dépasser  :max caracteres'
+        ],
+        'email' => [
+            'required' => 'le champ email est obligatoire',
+       'unique'=>'cet email est déjà   existe',
+       'email'=>':L\'email doit être une adresse e-mail valide'
+        ],
+        'phone' => [
+            'required' => 'le champ téléphone est obligatoire',
+       'min'=>'le champ téléphone doit avoir au moins :min caracteres',
+       'numeric'=>'Le champ téléphone doit être un nombre.'
+        ],
+        'message' => [
+            'required' => 'le champ message est obligatoire',
+       'min'=>'le champ message doit avoir au moins :min caracteres',
+       'max'=>'le champ message ne doit pas  depasser  :max caracteres'
+        ],
+        'entreprise' => [
+            'required' => 'le champ entreprise est obligatoire',
+       'min'=>'le champ entreprise doit avoir au moins :min caracteres',
+       'max'=>'le champ entreprise ne doit pas  depasser  :max caracteres'
+        ],
+        'position' => [
+            'required' => 'le champ position est obligatoire',
+       'min'=>'le champ position doit avoir au moins :min caracteres',
+       'max'=>'le champ position ne doit pas  depasser  :max caracteres'
+        ],
+        'tel_entreprise' => [
+            'required' => 'le champ téléphone Entreprise est obligatoire',
+       'min'=>'le champ téléphone  Entreprise doit avoir au moins :min caracteres',
+       'numeric'=>'Le champ téléphone  Entreprise doit être un nombre.'
+        ],
+        'adresse' => [
+            'required' => 'le champ adresse est obligatoire',
+       'min'=>'le champ adresse doit avoir au moins :min caracteres',
+       'max'=>'le champ adresse ne doit pas  depasser  :max caracteres'
         ],
     ],
 
