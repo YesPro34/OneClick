@@ -8,6 +8,17 @@
                 <div class="card-header">
                     <h3 class="card-title">Ajouter un utilisateur</h3>
                 </div>
+                <div class="error-section">
+                  @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                </div>
     <div class="card-body offset-lg-3">
         <form action="/admin/users" method="POST">
           @csrf

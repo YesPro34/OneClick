@@ -33,7 +33,7 @@
                   <i class="fas fa-plus"></i>
                   Ajouter
                </a>
-              <a class="btn btn-success btn-sm" href="#">
+              <a class="btn btn-success btn-sm" href="{{ route('utilisateur-excel') }}">
                   <i class="fas fa-upload"></i>
                   Expoter
               </a>

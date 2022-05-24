@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Utilisateur;
+use App\Exports\UtilisateurExport;
+use App\Http\Requests\UtilisateurRequest;
+use App\Http\Requests\updateUtilisateurRequest;
+use Excel;
+
 
 class UtilisateurController extends Controller
 {
@@ -37,7 +42,7 @@ class UtilisateurController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UtilisateurRequest $request)
     {
         $user = new Utilisateur ;
         $user->name = $request->input('name');
@@ -81,17 +86,17 @@ class UtilisateurController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(updateUtilisateurRequest $request, $id)
     {
         
         $user = Utilisateur::where('id' , $id)
         ->update([
-            'name'   => $request->input('name'),
-            'email' => $request->input('email'),
-            'telephone' => $request->input('telephone'),
-            'role'  => $request->input('role'),
-            'password'  => $request->input('password'),
-            'status' => $request->input('status')  
+             'name'      => $request->input('name'),
+             'email'     => $request->input('email'),
+             'telephone' => $request->input('telephone'),
+             'role'      => $request->input('role'),
+             'password'  => $request->input('password'),
+             'status'    => $request->input('status')
         ]);
         return redirect('admin/users');
 
@@ -112,4 +117,10 @@ class UtilisateurController extends Controller
         return redirect('admin/users');
 
     }
+    
+    public function export(){
+        
+        return Excel::download(new UtilisateurExport, 'Utilisateurs.xlsx');
+    }
+
 }

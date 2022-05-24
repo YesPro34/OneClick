@@ -142,8 +142,33 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'name' => [
+            'required' => 'Le champ nom complet est obligatoire',
+       'min'=>'Le champ nom complet doit avoir au moins :min caracteres',
+       'max'=>'Le champ nom complet ne doit pas  dépasser  :max caracteres'
+        ],
+        'email' => [
+            'required' => 'Le champ email est obligatoire',
+       'unique'=>'cet email est déjà  existe',
+       'email'=>'L\'email doit être une adresse e-mail valide'
+        ],
+        'telephone' => [
+            'required' => 'Le champ téléphone est obligatoire',
+       'min'=>'Le champ téléphone doit avoir au moins :min caracteres',
+       'numeric'=>'Le champ téléphone doit être un nombre.'
+        ],
+        'role' => [
+            'required' => 'Le champ role est obligatoire',
+       'max'=>'Le champ role ne doit pas  dépasser  :max caracteres'
+        ],
+        'password' => [
+            'required' => 'Le champ mot de passe est obligatoire',
+            'unique'=>'cet mot de passe déjà  existe',
+            'min'=>'Le champ mot de passe  doit avoir au moins :min caracteres'
+        ],
+        'status' => [
+            'required' => 'Le champ status est obligatoire',
+       'max'=>'Le champ status  ne doit pas  dépasser  :max caracteres'
         ],
     ],
 
@@ -159,5 +184,6 @@ return [
     */
 
     'attributes' => [],
+
 
 ];
