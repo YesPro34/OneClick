@@ -136,7 +136,7 @@ class ContactController extends Controller
     {
         $data=Contact::all();
            
-        $pdf = PDF::loadView('Pdf.create_pdf', ['data'=>$data],
+        $pdf = PDF::loadView('admin.contact.create_pdf', ['data'=>$data],
         [ 
            'mode'     => '',
         'format'                     => 'A4',

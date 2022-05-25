@@ -24,7 +24,7 @@
           @method('PUT')
             <div class="input-group mb-5" style="width:60%;">
               <div class="input-group-prepend">
-                  <span class="input-group-text">@</span>
+                  <span class="input-group-text"><i class="fas fa-user"> </i></span>
               </div>
               <input type="text" class="form-control" name="name" value="{{ $contact->name }}">
           </div>
@@ -39,7 +39,7 @@
 
           <div class="input-group mb-5" style="width:60%;">
               <div class="input-group-prepend">
-              <span class="input-group-text">@</span>
+              <span class="input-group-text"><i class="fas fa-phone"></i></span>
               </div>
               <input type="text" class="form-control" name="phone" value="{{ $contact->phone }}">
           </div>
@@ -47,22 +47,22 @@
           
          <div class="input-group mb-5" >
           <div class="input-group-prepend">
-          <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+          <span class="input-group-text"><i class="icon fas fa-info"></i></span>
           </div>
-          <select name="status"value="{{ $contact->status }}" style="width:55%;" class="form-select" aria-label="Default select example">
+          <select  style="width:55%;" name="status" class="form-select" aria-label="Default select example">
          
-            <option  value="contact reçu">contact reçu</option>
-            <option value="contact envoyé">contact envoyé</option>
-            <option value="contact accepté">contact accepté</option>
-            <option value="contact refusé">contact refusé</option>
-            <option value="contact archivé">contact archivé</option>
+            <option  value="contact reçu"{{ $contact->status == 'contact reçu' ? 'selected': '' }}>contact reçu</option>
+            <option value="contact envoyé" {{ $contact->status == 'contact envoyé' ? 'selected': '' }}>contact envoyé</option>
+            <option value="contact accepté" {{ $contact->status == 'contact accepté' ? 'selected': '' }}>contact accepté</option>
+            <option value="contact refusé" {{ $contact->status == 'contact refusé' ? 'selected': '' }}>contact refusé</option>
+            <option value="contact archivé" {{ $contact->status == 'contact archivé' ? 'selected': '' }}>contact archivé</option>
           </select>
        </div>
         
           <div class="col-lg-12 mb-5" style="width: 60%">
             <div class="form-box message-icon mb-30">
               <div class="input-group-prepend">
-                <span class="input-group-text">@</span>
+                <span class="input-group-text"><i class="fas fa-comments"></i></span>
                
                 <textarea name="message" id="message" cols="56" rows="10" placeholder=" MESSAGE">{{ $contact->message }}</textarea>
             </div>

@@ -61,8 +61,8 @@
            
             </div>
             <div class="export-options" id="open-options">
-            <a href="{{ route('exportPdf') }}" class="btn btn-primary">pdf</a>
-            <a href="{{ route('exportExcel') }}" class="btn btn-primary">Excel</a>
+            <a href="{{ route('exportPdfEssai') }}" class="btn btn-primary">pdf</a>
+            <a href="{{ route('exportExcelEssai') }}" class="btn btn-primary">Excel</a>
             </div>
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">

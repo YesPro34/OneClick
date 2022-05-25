@@ -23,7 +23,7 @@
          
             <div class="input-group mb-5" style="width:60%;">
               <div class="input-group-prepend">
-                  <span class="input-group-text">@</span>
+                  <span class="input-group-text"><i class="fas fa-user"> </i></span>
               </div>
               <input type="text" class="form-control" name="name" placeholder="Nom Complet">
           </div>
@@ -38,13 +38,13 @@
 
           <div class="input-group mb-5" style="width:60%;">
               <div class="input-group-prepend">
-              <span class="input-group-text">@</span>
+              <span class="input-group-text"><i class="fas fa-phone"></i></span>
               </div>
               <input type="text" class="form-control" name="phone" placeholder="Telephone">
           </div>
           <div class="input-group mb-5" >
             <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+            <span class="input-group-text"><i class="icon fas fa-info"></i></span>
             </div>
             <select name="status" style="width:55%;" class="form-select" aria-label="Default select example">
               <option selected>choisir le status</option>
@@ -58,7 +58,7 @@
           <div class="col-lg-12 mb-5">
             <div class="form-box message-icon mb-30">
               <div class="input-group-prepend">
-                <span class="input-group-text">@</span>
+                <span class="input-group-text"><i class="fas fa-comments"></i></span>
                
                 <textarea name="message" id="message" cols="56" rows="10" placeholder=" MESSAGE"></textarea>
             </div>

@@ -193,7 +193,7 @@
                                 <p data-animation="fadeInUp" data-delay=".7s"> aux entrepreneurs et aux petites entreprises (TPE et PME). </p>
                                 <div class="slider-button">
                                     <a class="btn" href="/demande-devis" data-animation="fadeInLeft" data-delay=".9s">Demandez un devis<i class="fa-solid fa-arrow-right-long"></i></a>
-                                    <a class="btn btn-yellow active" href="/services-agence-web-marrakech-maroc" data-animation="fadeInRight" data-delay="1.1s">Nos services <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    <a class="btn btn-yellow active" href="/services-agence-web-marrakech-maroc" data-animation="fadeInRight" data-delay="1.1s">Nos Services <i class="fa-solid fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -245,6 +245,9 @@
                         <div class="features-text-deux">
 
                             <p>Envoyez-les à vos clients et tracez chaque étape jusqu'au paiement client. Des rapports et des alertes automatiques vous aideront à suivre le statut global de vos ventes.</p>
+                        </div>
+                        <div class="agency-button mt-30">
+                            <a class="btn btn-yellow active" href="/essai-gratuit-agence-web-marrakech-maroc">Essai Gratuit <i class="fa-solid fa-arrow-right-long"></i></a>
                         </div>
                     </div>
                 </div>

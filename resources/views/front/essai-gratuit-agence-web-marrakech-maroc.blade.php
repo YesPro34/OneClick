@@ -1,6 +1,6 @@
 @extends('front.master.layout')
 @section('header_title')
-<title>Contact-agence web à Marrakech -Oneclick</title>
+<title>Essai-gratuit-agence web à Marrakech -Oneclick</title>
 @endsection
 @section('content')
 <!-- header-start -->

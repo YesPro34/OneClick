@@ -18,7 +18,8 @@ Route::post('/add/essai','EssaiController@store')->name('essai.store');
 Route::get('/essai-gratuit-agence-web-marrakech-maroc', function () {
     return view('front.essai-gratuit-agence-web-marrakech-maroc');
 })->name('essai');
-
+Route::get('/exportExcelEssai','EssaiController@export')->name('exportExcelEssai');
+Route::get('/exportPdfEssai','EssaiController@pdf')->name('exportPdfEssai');
 /* route essai gratuit end*/
 /* route contact start*/
 Route::post('/add/contact','ContactController@store')->name('contact.store');

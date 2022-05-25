@@ -23,26 +23,26 @@
          
             <div class="input-group mb-5" style="width:60%;">
               <div class="input-group-prepend">
-                  <span class="input-group-text">@</span>
+                  <span class="input-group-text"><i class="fas fa-user"> </i></span>
               </div>
               <input type="text" class="form-control" name="name" placeholder="Nom Complet">
           </div>
           <div class="input-group mb-5" style="width:60%;">
             <div class="input-group-prepend">
-            <span class="input-group-text">@</span>
+            <span class="input-group-text"><i class="fas fa-phone"></i></span>
             </div>
             <input type="text" class="form-control" name="phone" placeholder="Téléphone">
         </div>
         
           <div class="input-group mb-5" >
               <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  <span class="input-group-text"><i class="fas fa-lg fa-building"></i></span>
               </div>
               <input   style="width:55%;" type="text" name="entreprise" placeholder=" Entreprise">
           </div>
           <div class="input-group mb-5" >
             <div class="input-group-prepend">
-            <span class="input-group-text">@</span>
+            <span class="input-group-text"><i class="fas fa-phone"></i></span>
             </div>
             <input   style="width:55%;" type="text" name="tel_entreprise" placeholder="Téléphone Entreprise">
         </div>
@@ -50,14 +50,14 @@
          
           <div class="input-group mb-5" >
             <div class="input-group-prepend">
-            <span class="input-group-text">@</span>
+            <span class="input-group-text"><i class="fas fa-map-marker-alt mr-1"></i></span>
             </div>
             <input  style="width:55%;" type="text" name="adresse" placeholder="Adresse">
         </div>
       
       <div class="input-group mb-5" >
         <div class="input-group-prepend">
-        <span class="input-group-text">@</span>
+        <span class="input-group-text"><i class="fas fa-user"> </i></span>
         </div>
         <input  style="width:55%;" type="text" name="position" placeholder="Position">
     </div>

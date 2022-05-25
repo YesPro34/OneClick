@@ -186,7 +186,7 @@
                 <div class="col-xl-6 col-lg-6 ">
                     <div class="why-choose-wrapper mb-30 ">
                         <div class="section-title mb-75 ">
-                            <span>ONCLICK</span>
+                            <span>ONECLICK</span>
                             <h1>Développez votre activité grâce à un site internet</h1>
                             <div class="section-img ">
                                 <img src="img/shape/section.png " alt=" ">

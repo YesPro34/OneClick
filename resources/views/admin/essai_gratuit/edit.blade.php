@@ -24,21 +24,21 @@
           @method('PUT')
             <div class="input-group mb-5" style="width:60%;">
               <div class="input-group-prepend">
-                  <span class="input-group-text">@</span>
+                  <span class="input-group-text"><i class="fas fa-user"> </i></span>
               </div>
               <input type="text" class="form-control" name="name" value="{{ $essai->name }}">
           </div>
           
           <div class="input-group mb-5" style="width:60%;">
             <div class="input-group-prepend">
-            <span class="input-group-text">@</span>
+            <span class="input-group-text"><i class="fas fa-phone"></i></span>
             </div>
             <input type="text" class="form-control" name="phone" value="{{ $essai->phone }}">
         </div>
 
           <div class="input-group mb-5" style="width:60%;">
               <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  <span class="input-group-text"><i class="fas fa-lg fa-building"></i></span>
               </div>
               <input type="text" class="form-control" name="entreprise" value="{{ $essai->entreprise }}">
           </div>
@@ -46,23 +46,23 @@
 
           <div class="input-group mb-5" style="width:60%;">
               <div class="input-group-prepend">
-              <span class="input-group-text">@</span>
+              <span class="input-group-text"><i class="fas fa-phone"></i></span>
               </div>
               <input type="text" class="form-control" name="tel_entreprise" value="{{ $essai->tel_entreprise }}">
           </div>
 
-          <div class="input-group mb-5" style="width:60%;">
+          <div class="input-group mb-5">
             <div class="input-group-prepend">
-            <span class="input-group-text">@</span>
+            <span class="input-group-text"><i class="fas fa-map-marker-alt mr-1"></i></span>
             </div>
-            <input type="text" name="adresse" placeholder="Adresse" value="{{ $essai->adresse }}">
+            <input style="width:55%; " type="text" name="adresse" placeholder="Adresse" value="{{ $essai->adresse }}">
         </div>
          
-      <div class="input-group mb-5" style="width:60%;">
+      <div class="input-group mb-5" >
         <div class="input-group-prepend">
-        <span class="input-group-text">@</span>
+        <span class="input-group-text"><i class="fas fa-user"> </i></span>
         </div>
-        <input type="text" name="position" placeholder="Position" value="{{ $essai->position }}">
+        <input  style="width:55%; "type="text" name="position" placeholder="Position" value="{{ $essai->position }}">
     </div>
            
  
