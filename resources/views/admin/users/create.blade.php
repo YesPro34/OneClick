@@ -24,7 +24,7 @@
           @csrf
             <div class="input-group mb-5" style="width:60%;">
               <div class="input-group-prepend">
-                  <span class="input-group-text">@</span>
+                  <span class="input-group-text"><i class="fas fa-user"></i></span>
               </div>
               <input type="text" class="form-control" name="name" placeholder="Nom Complet">
           </div>
@@ -39,23 +39,29 @@
 
           <div class="input-group mb-5" style="width:60%;">
               <div class="input-group-prepend">
-              <span class="input-group-text">@</span>
+              <span class="input-group-text"><i class="fas fa-phone"></i></span>
               </div>
               <input type="text" class="form-control" name="telephone" placeholder="Phone">
           </div>
 
           
 
-          <div class="input-group mb-5" style="width:60%;">
-              <div class="input-group-prepend">
-              <span class="input-group-text">@</span>
-              </div>
-              <input type="text" class="form-control" name="role" placeholder="Role">
-          </div>
+          <div class="input-group mb-5" >
+            <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-comments"></i></span>
+            </div>
+            <select style="width:56%;" name="role" class="form-select" aria-label="Default select example">
+              <option selected>Choix de Role</option>
+              <option  value="Directeur">Directeur</option>
+              <option  value="Chef de projet">Chef de projet</option>
+              <option  value="Commercial">Commercial</option>
+              <option  value="Developpeur">Developpeur</option>
+            </select>
+        </div>
           
             <div class="input-group mb-5" style="width:60%;">
               <div class="input-group-prepend">
-               <span class="input-group-text">@</span>
+               <span class="input-group-text"><i class="fas fa-lock"></i></span>
               </div>
               <input type="text" class="form-control" name="password" placeholder="password">
              </div>
@@ -63,12 +69,16 @@
 
     
 
-             <div class="input-group mb-5" style="width:60%;">
+          <div class="input-group mb-5" >
               <div class="input-group-prepend">
-              <span class="input-group-text">@</span>
+                  <span class="input-group-text"><i class="icon fas fa-info"></i></span>
               </div>
-              <input type="text" class="form-control" name="status" placeholder="status">
-           </div>
+              <select style="width:56%;" name="status" class="form-select" aria-label="Default select example">
+                <option selected>Choix de Status</option>
+                <option  value="Active">Active</option>
+                <option  value="Non Active">Non Active</option>
+              </select>
+          </div>
 
               <div class="btn-group ">
                 

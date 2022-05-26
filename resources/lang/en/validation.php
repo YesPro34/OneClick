@@ -147,6 +147,10 @@ return [
        'min'=>'Le champ nom complet doit avoir au moins :min caracteres',
        'max'=>'Le champ nom complet ne doit pas  dépasser  :max caracteres'
         ],
+        'nom' => [
+            'required' => 'Le champ nom complet est obligatoire',
+       'max'=>'Le champ nom complet ne doit pas  dépasser  :max caracteres'
+        ],
         'email' => [
             'required' => 'Le champ email est obligatoire',
        'unique'=>'cet email est déjà  existe',
@@ -169,6 +173,10 @@ return [
         'status' => [
             'required' => 'Le champ status est obligatoire',
        'max'=>'Le champ status  ne doit pas  dépasser  :max caracteres'
+        ],
+        'message' => [
+            'required' => 'Le champ message est obligatoire',
+            'min'=>'Le champ message  doit avoir au moins :min caracteres'
         ],
     ],
 

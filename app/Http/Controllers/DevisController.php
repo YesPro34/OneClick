@@ -5,8 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Devis;
 use App\Exports\DevisExport;
-// use App\Http\Requests\UtilisateurRequest;
-// use App\Http\Requests\updateUtilisateurRequest;
+use App\Http\Requests\createDevisRequest;
+use App\Http\Requests\updateDevisRequest;
 use Excel;
 use PDF;
 
@@ -42,7 +42,7 @@ class DevisController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(createDevisRequest $request)
     {
         $devis = new Devis ;
         $devis->nom = $request->input('nom');
@@ -63,7 +63,8 @@ class DevisController extends Controller
      */
     public function show($id)
     {
-        //
+        $devis = Devis::find($id);
+        return view('admin.devis.show')->with('devis',$devis);
     }
 
     /**
@@ -85,7 +86,7 @@ class DevisController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(updateDevisRequest $request, $id)
     {
         $devis = Devis::where('id' , $id)
         ->update([

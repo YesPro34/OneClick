@@ -2,6 +2,32 @@
 
 
 @section('content')
+<style>
+  .export-options{
+      display: none;
+      text-align:center;
+    }
+    thead th {
+    text-align:center;
+  }
+  tbody td {
+    text-align:center;
+  }
+  </style>
+  <script>
+    
+    var a = 1;
+    function toggleclick(){
+      if(a == 1){
+        document.getElementById('open-options').style.display = "block";
+        return a=0;
+      }
+      else{
+        document.getElementById('open-options').style.display = "none";
+        return a=1;
+      }
+    }
+  </script>
 
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -28,15 +54,19 @@
       <div class="card">
         <div class="card-header">
           <h3 class="card-title">Projects</h3>
-            <div class="botton-group offset-lg-10">
-                <a class="btn btn-warning btn-sm" href="{{ asset('admin/users/create')  }}">
-                  <i class="fas fa-plus"></i>
-                  Ajouter
-               </a>
-              <a class="btn btn-success btn-sm" href="{{ route('utilisateur-excel') }}">
+            <div class="botton-group offset-lg-10"> 
+              <a onclick="toggleclick()" class="btn btn-success btn-sm" >
                   <i class="fas fa-upload"></i>
-                  Expoter
+                  Exporter
               </a>
+              <a class="btn btn-warning btn-sm" href="{{ asset('admin/users/create')  }}">
+                <i class="fas fa-plus"></i>            
+                Ajouter
+             </a>
+            </div>
+            <div class="export-options" id="open-options">
+              <a class="btn btn-danger btn-sm" href="{{ route('utilisateur-pdf') }}">PDF</a>
+              <a class="btn btn-success btn-sm" href="{{ route('utilisateur-excel') }}">EXCEL</a>
             </div>
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -53,7 +83,7 @@
                   <tr>
                     
                       <th style="width: 10%">
-                          id_user
+                          id
                       </th>
                       <th style="width: 20%">
                         Nom Complet
@@ -69,6 +99,9 @@
                       </th>
                       <th style="width: 10%" class="text-center">
                         Statut
+                      </th>
+                      <th style="width: 10%" class="text-center">
+                        date d'ajoute
                       </th>
 
 
@@ -99,11 +132,18 @@
                                     {{ $user->role }}
                                 </td>
                                 <td class="project-actions text-right">
-                                    {{ $user->status }}
+                                  @if ($user->status == 'Active')
+                                    <span class="badge badge-success">{{ $user->status }}</span> 
+                                  @else
+                                    <span class="badge badge-danger">{{ $user->status }}</span> 
+                                  @endif
                                 </td>
+                                <td class="project-actions text-right">
+                                  {{ $user->created_at }}
+                              </td>
                                 
                                 <td class="project-actions text-right">
-                                    <a class="btn btn-primary btn-sm" href="#">
+                                    <a class="btn btn-primary btn-sm" href="/admin/users/{{ $user->id}}">
                                         <i class="fas fa-folder"></i>
                                         Voir
                                     </a>

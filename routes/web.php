@@ -5,6 +5,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UtilisateurController;
 use App\Http\Controllers\DevisController;
+use App\Http\Controllers\StatistiqueController;
 
 
 /*
@@ -39,9 +40,7 @@ Route::get('/devis-pdf', [DevisController::class, 'exportPdf'])->name('devis-pdf
 Route::resource('admin/users', 'UtilisateurController');
 Route::resource('admin/devis', 'DevisController');
 
-Route::get('/admin/index', function(){
-    return view('admin.main_page.index');
-});
+Route::get('/admin/index', [StatistiqueController::class, 'index']);
 
 // Route::get('/export', 'UtilisateurController');
 

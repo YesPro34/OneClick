@@ -29,7 +29,7 @@ class updateUtilisateurRequest extends FormRequest
             'telephone' => 'required|numeric|min:10',
             'role' => 'required|max:20',
             'password' => 'required|min:8',
-            'status' => 'required|max:10',
+            'status' => 'required',
         ];
     }
 }

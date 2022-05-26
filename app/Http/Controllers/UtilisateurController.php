@@ -8,6 +8,7 @@ use App\Exports\UtilisateurExport;
 use App\Http\Requests\UtilisateurRequest;
 use App\Http\Requests\updateUtilisateurRequest;
 use Excel;
+use PDF;
 
 
 class UtilisateurController extends Controller
@@ -17,6 +18,10 @@ class UtilisateurController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+
+
+  
     public function index()
     {
         $users = Utilisateur::all();
@@ -64,7 +69,8 @@ class UtilisateurController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = Utilisateur::find($id);
+        return view('admin.users.show')->with('user' , $user);
     }
 
     /**
@@ -118,9 +124,19 @@ class UtilisateurController extends Controller
 
     }
     
-    public function export(){
+    public function exportExcel(){
         
         return Excel::download(new UtilisateurExport, 'Utilisateurs.xlsx');
+    }
+
+    public function exportPdf(){
+
+        $data = Utilisateur::all();
+          
+        $pdf = PDF::loadView('admin.users.pdf', ['data' => $data]);
+
+        return $pdf->download('utilisateur.pdf');
+        
     }
 
 }

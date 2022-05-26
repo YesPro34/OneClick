@@ -8,6 +8,12 @@
     text-align:center;
     
   }
+  thead th {
+    text-align:center;
+  }
+  tbody td {
+    text-align:center;
+  }
 </style>
 <script>
   
@@ -127,7 +133,17 @@
                                       {{ $ele->type_demande }}
                                   </td>                           
                                   <td class="project_progress">
-                                      {{ $ele->status }}
+                                      @if ($ele->status == 'Demande Recu')
+                                        <span class="badge badge-secondary">{{ $ele->status }}</span> 
+                                      @elseif ($ele->status == 'Devis Envoye')
+                                        <span class="badge badge-primary">{{ $ele->status }}</span> 
+                                      @elseif ($ele->status == 'Devis Accepte')
+                                        <span class="badge badge-success">{{ $ele->status }}</span> 
+                                      @elseif ($ele->status == 'Devis Refuse')
+                                        <span class="badge badge-danger">{{ $ele->status }}</span> 
+                                      @else 
+                                        <span class="badge badge-warning">{{ $ele->status }}</span> 
+                                      @endif
                                   </td>
                                   <td class="project_progress">
                                       {{ $ele->message }}
@@ -141,7 +157,7 @@
                                
                                 
                                 <td class="project-actions text-right">
-                                    <a class="btn btn-primary btn-sm" href="#">
+                                    <a class="btn btn-primary btn-sm" href="/admin/devis/{{ $ele->id }}">
                                         <i class="fas fa-folder"></i>
                                         Voir
                                     </a>
