@@ -1,4 +1,4 @@
- <!-- Control Sidebar -->
+ {{-- <!-- Control Sidebar -->
  <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
     <div class="p-3">
@@ -6,7 +6,7 @@
       <p>Sidebar content</p>
     </div>
   </aside>
-  <!-- /.control-sidebar -->
+  <!-- /.control-sidebar --> --}}
 
   <!-- Main Footer -->
   <footer class="main-footer">
@@ -29,11 +29,12 @@
 <!-- AdminLTE App -->
 <script src="{{ asset('dist/js/adminlte.min.js') }}"></script>
 <!--ChartJS-->
-<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+{{-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script> --}}
 
-
-
+<script src="{{ asset('plugins/chart.js/Chart.min.js') }}"></script>
+<script src="{{ asset('plugins/chart.js/Chart.js') }}"></script>
+<script src="{{ asset('dist/js/demo.js') }}"></script>
 
 
 @yield('footer-links')
-
+@yield('chart-link')

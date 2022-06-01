@@ -1,0 +1,1186 @@
+
+<!-- saved from url=(0178)https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&available=true&token=b8c28e45b5000ed11787008b4a18d984&live_url=https://www.iabako.com/fr/&preview=null -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="./ea0b1102c4"></script><script src="./nr-1216.min.js.téléchargement"></script><script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","errorBeacon":"bam-cell.nr-data.net","licenseKey":"ea0b1102c4","applicationID":"314793028","transactionName":"d1daRUoLCl5cQE5CX1BfUUUXEw9WXlcV","queueTime":0,"applicationTime":10,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"ea0b1102c4",applicationID:"314793028"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+  <meta http-equiv="Access-Control-Allow-Origin" content="https://app.birdseed.io">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="./intlTelInput.min.css">
+  <script defer="" src="./jquery.min.js.téléchargement"></script>
+  <link rel="stylesheet" href="./leaflet.css">
+  <link href="./css" rel="stylesheet" type="text/css">
+  <!-- <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" /> -->
+  <script src="./leaflet.js.téléchargement"></script>
+  <style>
+  html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  body {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  </style>
+
+
+  <script>
+    var widget_mode = "panel";
+  </script>
+<style type="text/css">.hello {
+  color: red; }
+</style><style type="text/css">img[onload^="SVGInject("]{visibility:hidden;}</style><link rel="stylesheet" type="text/css" href="./css(1)"><link rel="stylesheet" type="text/css" href="./icon"><link rel="stylesheet" type="text/css" href="./widget-styles.css"></head>
+
+<body style="">
+  <div style="width: 100%;" id="birdseed-widget-container" data-token="b8c28e45b5000ed11787008b4a18d984">
+    <div id="birdseed-widget" class="birdseed-module ">
+      <div id="birdseed-panel-frame" class="birdseed-content on no-footer" style="display: none;"><img src="./850c8350-9098-013a-3343-0e08855124dd.png" class="widget-logo">
+        <div class="birdseed-head">
+          <a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null" class="birdseed-back hide"><i class="material-icons">arrow_back_ios</i></a>
+          <p class="birdseed-head-title heading2 color-white"></p>
+          <a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null" class="birdseed-minimize"><i class="material-icons">close</i></a>
+        </div>
+
+        <div class="birdseed-body">
+
+          <!-- Panel // Proactive Panel -->
+          <div class="bsd-panel bsd-panel-menu bsd-hidden" id="bsd-proactive">
+            <svg class="bsd-proactive-bg" width="100%" height="100%" viewBox="0 0 300 321" version="1.1" preserveAspectRatio="none">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <path d="M297.561357,7.11051975 C297.591354,7.10430618 296.798373,4.8037827 294.196172,3.18396735 C289.188246,-0.794222027 15.1565037,-1.04447921 7.12406773,2.43298153 C7.12278216,2.42676795 4.95360234,3.18610996 3.34471541,5.61583299 C-0.793738574,10.0416142 -1.09177582,305.836789 2.45060366,313.917225 C2.44781827,313.917868 3.22601474,316.140615 5.72729933,317.754859 C10.5273917,321.803541 284.979943,322.063868 292.949172,318.535627 C293.157648,318.457208 295.231267,317.633159 296.762592,315.264072 C300.794129,310.447906 301.060242,15.1596736 297.561357,7.11051975 Z" fill="#FFFFFF"></path>
+              </g>
+            </svg>
+            <div class="birdseed-message">
+              <div id="bsd-proactive-video" style="position: relative;">
+                <video width="100%" height="auto" class="video-intro" poster="" controls="" playsinline="">
+                  <source src="" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="embed-code" style="display: none;"></div>
+              <div class="message-details">
+                <h4>Hey, look over here!</h4>
+                <p>Here's an example of a proactive welcome message.</p>
+              </div>
+            </div>
+            <div class="birdseed-menu">
+              <ul>
+                <!--<li id=""><a href="#bsd-click-to-call" class="bsd-menu-trigger"><i class="material-icons bs-menu-icon">phone_callback</i> Request a Call</a></li>
+                <li><a href="#bsd-call-us" class="bsd-menu-trigger"><i class="material-icons bs-menu-icon">local_phone</i> Call Us</a></li>//-->
+                <li><a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#bsd-home" class="bsd-proactive-cta bsd-menu-trigger bsd-btn-filled">More Options</a></li>
+              </ul>
+              <a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#bsd-home" class="bsd-proactive-more bsd-menu-trigger" style="display: none;">More Options</a>
+            </div>
+          </div>
+
+          <!-- Panel // Inactive -->
+          <div class="bsd-panel bsd-panel-menu bsd-hidden" id="bsd-chat-inactive">
+            <div class="bsd-panel-inner">
+
+              <div class="birdseed-message text-center" style="font-weight: bold;">
+                <video width="100%" height="auto" class="video-intro" controls="" playsinline="">
+                  <source src="" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="embed-code"></div>
+                <img class="image-intro">
+                <p class="text-center">Sorry we missed you.</p>
+              </div>
+              <form class="bsd-form" action="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#">
+                <div class="bsd-form-group">
+                  <button class="bsd-button-default">Send Feedback</button>
+                  <a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#bsd-home" class="bsd-menu-trigger">Continue without sending feedback</a>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+          <!-- Panel // Main Opener -->
+          <div class="bsd-panel bsd-panel-menu bsd-current" id="bsd-home">
+            <div class="birdseed-message with-logo">
+              <h4 class="heading1 color-white">Bienvenue chez IABAKO 😃</h4>
+              <p class="body-large">Contactez-nous, on sera ravis de vous aider !</p>
+            </div>
+            <div class="birdseed-menu birdseed-home-menu">
+              <ul class="birdseed-main-menu birdseed-current-menu">
+              <li id="tool-schedule" class=""><a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#bsd-schedule-demo" class="bsd-menu-trigger heading3 color-gray-darker ">
+            <div class="bs-menu-icon-bg"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28" version="1.1" data-inject-url="https://app.birdseed.io/assets/tool-icon-demo2-881f087704d0b9136696d6825f3448204255b2dbc1a9e04eba2d278de3d021b7.svg" class="injectable bs-menu-icon">
+    <title>tool icon v3 / demo</title>
+    <g id="tool-icon-v3-/-demo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M23.2552036,2 C25.0973806,2 26.5909491,3.49313479 26.5909491,5.33476364 L26.5909491,5.33476364 L26.5909491,23.2460727 C26.5909491,25.0884666 25.0975975,26.5818182 23.2552036,26.5818182 L23.2552036,26.5818182 L5.34487636,26.5818182 C3.50248252,26.5818182 2.00913091,25.0884666 2.00913091,23.2460727 L2.00913091,23.2460727 L2.0088999,7.06038478 C2.00303032,7.0165547 2,6.97182578 2,6.92638909 C2,6.8809524 2.00303032,6.83622348 2.0088999,6.7923934 L2.00913091,5.33476364 C2.00913091,3.49313479 3.50269937,2 5.34487636,2 L5.34487636,2 Z M24.59,7.926 L4.009,7.926 L4.00913091,23.2460727 C4.00913091,23.9404956 4.53877729,24.5109904 5.21621758,24.5757046 L5.34487636,24.5818182 L23.2552036,24.5818182 C23.993028,24.5818182 24.5909491,23.9838971 24.5909491,23.2460727 L24.5909491,23.2460727 L24.59,7.926 Z M6.96458182,21.5865855 C7.51686657,21.5865855 7.96458182,22.0343007 7.96458182,22.5865855 C7.96458182,23.0994213 7.57854163,23.5220926 7.08120294,23.5798577 L6.96458182,23.5865855 L6.04658182,23.5865855 C5.49429707,23.5865855 5.04658182,23.1388702 5.04658182,22.5865855 C5.04658182,22.0737496 5.43262201,21.6510783 5.92996069,21.5933132 L6.04658182,21.5865855 L6.96458182,21.5865855 Z M10.8291164,21.5865855 C11.3814011,21.5865855 11.8291164,22.0343007 11.8291164,22.5865855 C11.8291164,23.0994213 11.4430762,23.5220926 10.9457375,23.5798577 L10.8291164,23.5865855 L9.91111636,23.5865855 C9.35883161,23.5865855 8.91111636,23.1388702 8.91111636,22.5865855 C8.91111636,22.0737496 9.29715655,21.6510783 9.79449524,21.5933132 L9.91111636,21.5865855 L10.8291164,21.5865855 Z M14.7563891,21.5865855 C15.3086738,21.5865855 15.7563891,22.0343007 15.7563891,22.5865855 C15.7563891,23.0994213 15.3703489,23.5220926 14.8730102,23.5798577 L14.7563891,23.5865855 L13.8383891,23.5865855 C13.2861043,23.5865855 12.8383891,23.1388702 12.8383891,22.5865855 C12.8383891,22.0737496 13.2244293,21.6510783 13.721768,21.5933132 L13.8383891,21.5865855 L14.7563891,21.5865855 Z M6.96458182,18.6411309 C7.51686657,18.6411309 7.96458182,19.0888462 7.96458182,19.6411309 C7.96458182,20.1539667 7.57854163,20.5766381 7.08120294,20.6344032 L6.96458182,20.6411309 L6.04658182,20.6411309 C5.49429707,20.6411309 5.04658182,20.1934157 5.04658182,19.6411309 C5.04658182,19.1282951 5.43262201,18.7056237 5.92996069,18.6478586 L6.04658182,18.6411309 L6.96458182,18.6411309 Z M10.8291164,18.6411309 C11.3814011,18.6411309 11.8291164,19.0888462 11.8291164,19.6411309 C11.8291164,20.1539667 11.4430762,20.5766381 10.9457375,20.6344032 L10.8291164,20.6411309 L9.91111636,20.6411309 C9.35883161,20.6411309 8.91111636,20.1934157 8.91111636,19.6411309 C8.91111636,19.1282951 9.29715655,18.7056237 9.79449524,18.6478586 L9.91111636,18.6411309 L10.8291164,18.6411309 Z M14.7563891,18.6411309 C15.3086738,18.6411309 15.7563891,19.0888462 15.7563891,19.6411309 C15.7563891,20.1539667 15.3703489,20.5766381 14.8730102,20.6344032 L14.7563891,20.6411309 L13.8383891,20.6411309 C13.2861043,20.6411309 12.8383891,20.1934157 12.8383891,19.6411309 C12.8383891,19.1282951 13.2244293,18.7056237 13.721768,18.6478586 L13.8383891,18.6411309 L14.7563891,18.6411309 Z M18.6841527,18.6411309 C19.2364375,18.6411309 19.6841527,19.0888462 19.6841527,19.6411309 C19.6841527,20.1539667 19.2981125,20.5766381 18.8007739,20.6344032 L18.6841527,20.6411309 L17.7661527,20.6411309 C17.213868,20.6411309 16.7661527,20.1934157 16.7661527,19.6411309 C16.7661527,19.1282951 17.1521929,18.7056237 17.6495316,18.6478586 L17.7661527,18.6411309 L18.6841527,18.6411309 Z M22.6119164,18.6411309 C23.1642011,18.6411309 23.6119164,19.0888462 23.6119164,19.6411309 C23.6119164,20.1539667 23.2258762,20.5766381 22.7285375,20.6344032 L22.6119164,20.6411309 L21.6939164,20.6411309 C21.1416316,20.6411309 20.6939164,20.1934157 20.6939164,19.6411309 C20.6939164,19.1282951 21.0799566,18.7056237 21.5772952,18.6478586 L21.6939164,18.6411309 L22.6119164,18.6411309 Z M6.92383636,12.7493382 C7.47612111,12.7493382 7.92383636,13.1970534 7.92383636,13.7493382 C7.92383636,14.262174 7.53779617,14.6848453 7.04045749,14.7426105 L6.92383636,14.7493382 L6.00583636,14.7493382 C5.45355161,14.7493382 5.00583636,14.3016229 5.00583636,13.7493382 C5.00583636,13.2365023 5.39187655,12.813831 5.88921524,12.7560659 L6.00583636,12.7493382 L6.92383636,12.7493382 Z M6.96458182,9.80388364 C7.51686657,9.80388364 7.96458182,10.2515989 7.96458182,10.8038836 C7.96458182,11.3167195 7.57854163,11.7393908 7.08120294,11.7971559 L6.96458182,11.8038836 L6.04658182,11.8038836 C5.49429707,11.8038836 5.04658182,11.3561684 5.04658182,10.8038836 C5.04658182,10.2910478 5.43262201,9.86837648 5.92996069,9.81061137 L6.04658182,9.80388364 L6.96458182,9.80388364 Z M10.8291164,9.80388364 C11.3814011,9.80388364 11.8291164,10.2515989 11.8291164,10.8038836 C11.8291164,11.3167195 11.4430762,11.7393908 10.9457375,11.7971559 L10.8291164,11.8038836 L9.91111636,11.8038836 C9.35883161,11.8038836 8.91111636,11.3561684 8.91111636,10.8038836 C8.91111636,10.2910478 9.29715655,9.86837648 9.79449524,9.81061137 L9.91111636,9.80388364 L10.8291164,9.80388364 Z M14.7563891,9.80388364 C15.3086738,9.80388364 15.7563891,10.2515989 15.7563891,10.8038836 C15.7563891,11.3167195 15.3703489,11.7393908 14.8730102,11.7971559 L14.7563891,11.8038836 L13.8383891,11.8038836 C13.2861043,11.8038836 12.8383891,11.3561684 12.8383891,10.8038836 C12.8383891,10.2910478 13.2244293,9.86837648 13.721768,9.81061137 L13.8383891,9.80388364 L14.7563891,9.80388364 Z M18.6841527,9.80388364 C19.2364375,9.80388364 19.6841527,10.2515989 19.6841527,10.8038836 C19.6841527,11.3167195 19.2981125,11.7393908 18.8007739,11.7971559 L18.6841527,11.8038836 L17.7661527,11.8038836 C17.213868,11.8038836 16.7661527,11.3561684 16.7661527,10.8038836 C16.7661527,10.2910478 17.1521929,9.86837648 17.6495316,9.81061137 L17.7661527,9.80388364 L18.6841527,9.80388364 Z M22.6119164,9.80388364 C23.1642011,9.80388364 23.6119164,10.2515989 23.6119164,10.8038836 C23.6119164,11.3167195 23.2258762,11.7393908 22.7285375,11.7971559 L22.6119164,11.8038836 L21.6939164,11.8038836 C21.1416316,11.8038836 20.6939164,11.3561684 20.6939164,10.8038836 C20.6939164,10.2910478 21.0799566,9.86837648 21.5772952,9.81061137 L21.6939164,9.80388364 L22.6119164,9.80388364 Z M9.59428712,3.99781081 L5.34487636,4 C4.60713887,4 4.00913091,4.59783433 4.00913091,5.33476364 L4.00913091,5.33476364 L4.009,5.926 L9.5872256,5.92773587 C9.16449278,5.81097611 8.85407273,5.42360657 8.85407273,4.96373455 C8.85407273,4.50130565 9.16795423,4.1121877 9.59428712,3.99781081 Z M18.4306508,3.99781081 L10.1472402,3.99781081 C10.573573,4.1121877 10.8874545,4.50130565 10.8874545,4.96373455 C10.8874545,5.42360657 10.5770345,5.81097611 10.1543017,5.92773587 L18.4235892,5.92773587 C18.0008564,5.81097611 17.6904364,5.42360657 17.6904364,4.96373455 C17.6904364,4.50130565 18.0043179,4.1121877 18.4306508,3.99781081 Z M23.2552036,4 L18.9836038,3.99781081 C19.4099367,4.1121877 19.7238182,4.50130565 19.7238182,4.96373455 C19.7238182,5.42360657 19.4133981,5.81097611 18.9906653,5.92773587 L24.59,5.926 L24.5909491,5.33476364 C24.5909491,4.64118311 24.0612258,4.07081475 23.3838488,4.00611252 L23.2552036,4 Z" id="Combined-Shape" fill="currentColor" fill-rule="nonzero"></path>
+    </g>
+</svg></div>
+            <div class="bs-menu-arrow-icon-bg"><span class="arrow-icon"></span></div>
+          <span class="tab-title">RDV Téléphonique / démo</span></a>
+          </li><li id="tool-message" class=""><a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#bsd-contact-form" class="bsd-menu-trigger heading3 color-gray-darker ">
+            <div class="bs-menu-icon-bg"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28" version="1.1" data-inject-url="https://app.birdseed.io/assets/tool-icon-email2-1ce7c3de4e7d59617e1beb7d578dc9bb110dfee0e9f56dfd5c4624ce46a1d21a.svg" class="injectable bs-menu-icon">
+    <title>tool icon v3 / email</title>
+    <g id="tool-icon-v3-/-email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M23.4504,5 C25.1988765,5 26.5999,6.37439558 26.5999,8.0908 L26.5999,8.0908 L26.5999,20.5122 C26.5999,22.2283257 25.1989821,23.6 23.4503,23.6 L23.4503,23.6 L5.1423,23.6 C3.39413266,23.6 2,22.2290111 2,20.5123 L2,20.5123 L2,8.0908 C2,6.37368187 3.39434466,5 5.1423,5 L5.1423,5 Z M23.4504,6.6 L5.1423,6.6 C4.27269736,6.6 3.6,7.26272866 3.6,8.0908 L3.6,8.0908 L3.6,20.5123 C3.6,21.3393048 4.2718485,22 5.1423,22 L5.1423,22 L23.4503,22 C24.322793,22 24.9999,21.3370273 24.9999,20.5122 L24.9999,20.5122 L24.9999,8.09073672 C24.9999,7.26498358 24.3220325,6.6 23.4504,6.6 L23.4504,6.6 Z M18.3044689,15.3467578 L18.3925959,15.4105637 L23.7027959,19.8276637 C24.0424711,20.1102104 24.0887829,20.6146208 23.8062363,20.9542959 C23.5472352,21.2656648 23.1018069,21.330527 22.7677311,21.1215422 L22.6796041,21.0577363 L17.3694041,16.6406363 C17.0297289,16.3580896 16.9834171,15.8536792 17.2659637,15.5140041 C17.5249648,15.2026352 17.9703931,15.137773 18.3044689,15.3467578 Z M11.112741,15.5140098 C11.3717392,15.8253811 11.3544037,16.2751732 11.0880774,16.5656066 L11.0092902,16.640641 L5.69899023,21.057741 C5.35931247,21.3402845 4.85490248,21.293968 4.572359,20.9542902 C4.3133608,20.6429189 4.33069634,20.1931268 4.59702256,19.9026934 L4.67580977,19.827659 L9.98610977,15.410559 C10.3257875,15.1280155 10.8301975,15.174332 11.112741,15.5140098 Z M5.63649735,7.49826935 L5.72210182,7.56542182 L13.6490089,14.6931282 C13.9154414,14.9327044 14.3373727,14.956662 14.6349129,14.764994 L14.7291019,14.6931185 L22.6561019,7.56541847 C22.9846459,7.27000241 23.4904655,7.29685792 23.7858815,7.62540192 C24.0566796,7.92656725 24.05668,8.3766933 23.801737,8.67716847 L23.7258981,8.75518153 L15.7989089,15.8828718 C14.9397632,16.6554158 13.6233874,16.6940431 12.7185248,15.9987589 L12.5791982,15.8828782 L4.65229818,8.75517818 C4.32375604,8.45976006 4.29690371,7.95394033 4.59232182,7.62539818 C4.86312176,7.32423455 5.3107175,7.27657416 5.63649735,7.49826935 Z" id="Combined-Shape" fill="currentColor" fill-rule="nonzero"></path>
+    </g>
+</svg></div>
+            <div class="bs-menu-arrow-icon-bg"><span class="arrow-icon"></span></div>
+          <span class="tab-title">Laissez-nous un message</span></a>
+          </li><li id="tool-link1" class=""><div class="btn-tool-featured">
+      <a href="https://iabako-app.com/fr/#Home#SignUp" class="bsd-menu-trigger heading3 color-gray-darker featured" target="_blank">
+            
+            <div class="bs-menu-arrow-icon-bg"><span class="arrow-icon"></span></div>
+          <span class="tab-title">Essai Gratuit, sans engagement</span></a>
+          
+    </div></li></ul>
+
+              <ul class="birdseed-sub-menu hide"></ul>
+            </div>
+
+          </div>
+
+          <!-- Panel // Feedback no questions message-->
+          <div class="bsd-panel bsd-panel-contact-form bsd-success bsd-hidden" id="bsd-feedback-no-items">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message birdseed-success-message text-center">
+                <div class="bsd-success-check"></div>
+                <h4 class="text-center">Nothing to show yet!</h4>
+                <p>Please Click "Add Question" to add your first survey question.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel // Feedback -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-feedback">
+            <div class="bsd-panel-inner">
+
+              <div class="birdseed-message text-center">
+                <!-- <h4 class="birdseed-title text-center">Hey, I just met you...</h4> -->
+
+                <div class="survey-progress-bar" style="display: none;">
+                  <p></p>
+                  <div class="progress-bar-bg">
+                    <div class="progress-bar">
+                    </div>
+                  </div>
+                </div>
+
+                <div id="survey-question">
+                </div>
+                <div id="survey-results">
+                  <div class="bsd-survey-option-media">
+                    <div class="bsd-survey-option-video"><video></video></div>
+                    <div class="bsd-survey-option-embed-code"><div class="embed-code"></div></div>
+                    <div class="bsd-survey-option-image text-center"><img class="image-intro"></div>
+                  </div>
+
+                  <p class="bsd-survey-option-text"></p>
+
+                  <div class="button-container">
+                    <span id="survey-continue" class="bsd-button-default">Continue »</span>
+                  </div>
+
+                  <div id="survey-response-title">How others have answered this question;</div>
+
+                  <div id="survey-chart" style="margin-top: 20px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel // Feedback success message -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-success bsd-hidden" id="bsd-feedback-success">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message birdseed-success-message text-center">
+                <div class="bsd-success-check"></div>
+                <h4 class="text-center">All done thanks!</h4>
+                <p>Thank you for taking our survey!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel // Testimonials -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-testimonials">
+
+            <div class="bsd-t-nav">
+              <a id="bsd-t-nav-left" href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null" class="nav-arrow"><i class="material-icons">chevron_left</i></a>
+              <div class="bsd-t-nav-dots">
+                <span class="bsd-t-nav-dot"></span>
+                <span class="bsd-t-nav-dot active"></span>
+                <span class="bsd-t-nav-dot"></span>
+                <span class="bsd-t-nav-dot"></span>
+              </div>
+              <a id="bsd-t-nav-right" href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null" class="nav-arrow"><i class="material-icons">chevron_right</i></a>
+            </div>
+
+          </div>
+
+          <!-- Panel // Testimonials no items message-->
+          <div class="bsd-panel bsd-panel-contact-form bsd-success bsd-hidden" id="bsd-testimonial-no-items">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message birdseed-success-message text-center">
+                <div class="bsd-success-check"></div>
+                <h4 class="text-center">Nothing to show yet!</h4>
+                <p>Please Click "Add Testimonial" to add your first testimonial.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel // Timeline -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-timeline">
+            <div class="bsd-panel-inner">
+
+              <div class="bsd-timeline">
+                <div class="bsd-dfilters-wrapper">
+                  <div class="bsd-dfilters">
+                    <select class="bsd-dfilters-select">
+                    </select>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    <div data-index="3" href="#bsd-timeline-event" data-bsdnav="true" class="bsd-timeline-event">
+                      <div class="item-header">
+                        <span class="item-votes up">12</span>
+                        <span class="item-label">New</span>
+                        <span class="item-meta">September 24th, 2019</span>
+                      </div>
+                      <span class="item-title">Timeline event title Timeline event title Timeline event title Timeline event title Timeline event title</span>
+                      <span class="item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                      <a data-index="3" href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#bsd-timeline-event" data-bsdnav="true">Read more &gt;</a>
+                    </div>
+                  </li>
+                </ul>
+                <div style="display: none;" id="bsd-timeline-no-events">
+                  <div class="birdseed-message birdseed-success-message text-center">
+                    <div class="bsd-success-check"></div>
+                    <h4 class="text-center">Nothing to show yet!</h4>
+                    <p>Please Click "Add Event" to add your first event announcement.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Panel // Timeline Item-->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-timeline-event">
+            <div class="bsd-panel-inner">
+
+              <div class="birdseed-message">
+                <video width="100%" height="auto" class="video-intro" controls="" playsinline="">
+                  <source src="" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="embed-code"></div>
+                <div class="bsd-timeline-event-header">
+                  <h4>Timeline Content</h4>
+                  <span class="bsd-timeline-head-meta">October 25, 2018</span>
+                </div>
+                <p>Pork belly bresaola corned beef fatback swine turkey. Beef porchetta ribeye, tail jerky chicken buffalo flank chuck pork chop pancetta bresaola. Kielbasa andouille short ribs kevin. Tenderloin kielbasa andouille bacon.</p>
+                <p>Tail leberkas ham hock jerky rump chuck swine shank andouille pancetta tri-tip. Kielbasa pastrami prosciutto shankle tail leberkas venison biltong pig porchetta pork ball tip alcatra. Short loin fatback pork loin turkey ham hock bresaola porchetta venison kevin. Pork cupim cow pork belly burgdoggen drumstick corned beef chuck.</p>
+                <p>Jowl boudin t-bone, salami andouille tri-tip bresaola chuck porchetta pork loin doner ground round sausage pastrami flank. Ground round alcatra t-bone, doner venison leberkas sausage boudin fatback beef shank porchetta. Brisket sausage leberkas filet mignon, pig pork prosciutto bacon capicola venison kielbasa pork loin drumstick tri-tip. Spare ribs cow doner bacon chuck picanha porchetta.</p>
+              </div>
+
+              <div class="bsd-timeline-event-feedback">
+                <div class="email-panel">
+                  <div class="panel-body">
+                    <input type="email" name="email" placeholder="Enter your email">
+                    <button type="button" class="submit-email"><i class="material-icons">send</i></button>
+                  </div>
+                  <p class="email-success">Thanks for subscribing!</p>
+                </div>
+
+                <div class="feedback-panel">
+                  <span class="feedback-question">Do you like this?</span>
+                  <div class="feedback-options">
+                    <div class="btn emoji" data-feedback="1"><i class="material-icons bs-menu-icon">thumb_up</i></div>
+                    <div class="btn emoji" data-feedback="2"><i class="material-icons bs-menu-icon">thumb_down</i></div>
+                  </div>
+                  <p class="feedback-success" style="display: none;">Thanks for your feedback!</p>
+                </div>
+
+                <div class="vote-panel">
+                  <div class="vote-btn active">
+                    <i class="material-icons">arrow_drop_up</i>
+                    <span class="vote-label">Upvote</span>
+                    <span class="vote-count">12</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Panel // Chat Feedback Form -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-chat-feedback">
+            <div class="bsd-panel-inner">
+
+              <div class="birdseed-message text-center">
+                <p class="text-center feedback-description">Vos commentaires nous aident à nous améliorer. Veuillez nous faire part de votre expérience de chat.</p>
+                <div class="star-area">
+                  <div class="btn star" data-rating="1 étoile"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="26px" viewBox="0 0 28 26" version="1.1" data-inject-url="https://app.birdseed.io/assets/star-5d03e86b5d66eb7da5d34a57fe3475b2a6c808ade3de1793ad50f31b29c133de.svg" class="star-icon">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="Live-chat-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1727.000000, -296.000000)" fill="#111111">
+            <g id="Group-3" transform="translate(1478.000000, 142.000000)">
+                <g id="Group-2" transform="translate(40.000000, 143.000000)">
+                    <g id="Group-6" transform="translate(11.000000, 0.000000)">
+                        <polygon id="Star" points="211.625 31.875 203.175587 36.1239837 204.789281 27.1244918 197.953563 20.7510163 207.400293 19.4380082 211.625 11.25 215.849707 19.4380082 225.296437 20.7510163 218.460719 27.1244918 220.074413 36.1239837"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></div>
+                  <div class="btn star" data-rating="2 étoiles"><svg width="28px" height="26px" viewBox="0 0 28 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-inject-url="https://app.birdseed.io/assets/star-5d03e86b5d66eb7da5d34a57fe3475b2a6c808ade3de1793ad50f31b29c133de.svg" class="star-icon">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="Live-chat-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1727.000000, -296.000000)" fill="#111111">
+            <g id="Group-3" transform="translate(1478.000000, 142.000000)">
+                <g id="Group-2" transform="translate(40.000000, 143.000000)">
+                    <g id="Group-6" transform="translate(11.000000, 0.000000)">
+                        <polygon id="Star" points="211.625 31.875 203.175587 36.1239837 204.789281 27.1244918 197.953563 20.7510163 207.400293 19.4380082 211.625 11.25 215.849707 19.4380082 225.296437 20.7510163 218.460719 27.1244918 220.074413 36.1239837"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></div>
+                  <div class="btn star" data-rating="3 étoiles"><svg width="28px" height="26px" viewBox="0 0 28 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-inject-url="https://app.birdseed.io/assets/star-5d03e86b5d66eb7da5d34a57fe3475b2a6c808ade3de1793ad50f31b29c133de.svg" class="star-icon">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="Live-chat-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1727.000000, -296.000000)" fill="#111111">
+            <g id="Group-3" transform="translate(1478.000000, 142.000000)">
+                <g id="Group-2" transform="translate(40.000000, 143.000000)">
+                    <g id="Group-6" transform="translate(11.000000, 0.000000)">
+                        <polygon id="Star" points="211.625 31.875 203.175587 36.1239837 204.789281 27.1244918 197.953563 20.7510163 207.400293 19.4380082 211.625 11.25 215.849707 19.4380082 225.296437 20.7510163 218.460719 27.1244918 220.074413 36.1239837"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></div>
+                  <div class="btn star" data-rating="4 étoiles"><svg width="28px" height="26px" viewBox="0 0 28 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-inject-url="https://app.birdseed.io/assets/star-5d03e86b5d66eb7da5d34a57fe3475b2a6c808ade3de1793ad50f31b29c133de.svg" class="star-icon">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="Live-chat-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1727.000000, -296.000000)" fill="#111111">
+            <g id="Group-3" transform="translate(1478.000000, 142.000000)">
+                <g id="Group-2" transform="translate(40.000000, 143.000000)">
+                    <g id="Group-6" transform="translate(11.000000, 0.000000)">
+                        <polygon id="Star" points="211.625 31.875 203.175587 36.1239837 204.789281 27.1244918 197.953563 20.7510163 207.400293 19.4380082 211.625 11.25 215.849707 19.4380082 225.296437 20.7510163 218.460719 27.1244918 220.074413 36.1239837"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></div>
+                  <div class="btn star" data-rating="5 étoiles"><svg width="28px" height="26px" viewBox="0 0 28 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-inject-url="https://app.birdseed.io/assets/star-5d03e86b5d66eb7da5d34a57fe3475b2a6c808ade3de1793ad50f31b29c133de.svg" class="star-icon">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="Live-chat-flow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1727.000000, -296.000000)" fill="#111111">
+            <g id="Group-3" transform="translate(1478.000000, 142.000000)">
+                <g id="Group-2" transform="translate(40.000000, 143.000000)">
+                    <g id="Group-6" transform="translate(11.000000, 0.000000)">
+                        <polygon id="Star" points="211.625 31.875 203.175587 36.1239837 204.789281 27.1244918 197.953563 20.7510163 207.400293 19.4380082 211.625 11.25 215.849707 19.4380082 225.296437 20.7510163 218.460719 27.1244918 220.074413 36.1239837"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></div>
+                </div>
+                <br style="clear: both;">
+                <div class="star-text"></div>
+              </div>
+              <form class="bsd-form" action="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#">
+                <div class="bsd-form-group">
+                  <button class="bsd-button-default">Envoyer des commentaires</button>
+                  <a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#bsd-home" class="bsd-menu-trigger">Continuer sans envoyer de commentaires</a>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+          <!-- Panel // Live Chat Feedback Success -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-success bsd-hidden" id="bsd-live-chat-success">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message birdseed-success-message text-center">
+                <div class="bsd-success-check"></div>
+                <h4 class="text-center">Tout est bon, merci !</h4>
+                <p>Merci pour votre message. Nous vous répondrons très rapidement !.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel // Call Feedback Form -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-call-feedback">
+            <div class="bsd-panel-inner">
+
+              <div class="birdseed-message text-center">
+                <p class="text-center feedback-description">Your feedback helps us to improve. Please let us know about your call experience.</p>
+                <div class="sentiment-area">
+                  <div class="btn" data-text="Hate"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" data-inject-url="https://app.birdseed.io/assets/sentiment1-2a4a2869cf882fde82d76d8a9027b183a911ce4ba7d54f318925db2bcc4a8907.svg" class="sentiment-icon">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tools-latest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Base" transform="translate(-788.000000, -304.000000)">
+            <g id="Hate" transform="translate(788.000000, 304.000000)">
+                <path d="M37.6455212,35.8284158 C40.5775486,32.3257501 40.7710848,11.0252172 38.2264416,5.17128709 C38.2482572,5.16676813 38.2608792,5.16380743 38.2608792,5.16380743 C38.2608792,5.16380743 37.6715442,3.49366015 35.7790339,2.31561262 C32.1369061,-0.57761602 11.0229118,-0.759621247 5.18114017,1.76944111 C5.18020521,1.76492214 5.17927025,1.76133814 5.17927025,1.76133814 C5.17927025,1.76133814 3.60261989,2.31717088 2.4325203,4.08424218 C-0.577264417,7.30299215 -0.794018782,28.9722103 1.78225721,34.8488911 C1.78023147,34.8493586 1.77664746,34.8501377 1.77664746,34.8501377 C1.77664746,34.8501377 2.34619254,36.4659016 4.16530861,37.6398976 C7.6562849,40.5843931 29.076322,40.7737222 34.8721249,38.207729 C35.0237439,38.1506965 36.5318307,37.5513882 37.6455212,35.8284158" id="Fill-1" fill="#CDCFD9"></path>
+                <g id="Group" transform="translate(7.000000, 8.000000)">
+                    <ellipse id="Oval" fill="#000000" cx="4.5" cy="7" rx="2.5" ry="2"></ellipse>
+                    <path d="M22,15 C22,19.418278 17.7467051,23 12.5,23 C7.25329488,23 3,19.418278 3,15 L3,15 Z" id="Combined-Shape" fill="#000000" transform="translate(12.500000, 19.000000) scale(1, -1) translate(-12.500000, -19.000000) "></path>
+                    <line x1="10" y1="0" x2="0.5" y2="4.5" id="Line-2" stroke="#000000" stroke-linecap="round" transform="translate(5.000000, 2.500000) scale(-1, 1) translate(-5.000000, -2.500000) "></line>
+                </g>
+                <g id="Group" transform="translate(28.000000, 12.500000) scale(-1, 1) translate(-28.000000, -12.500000) translate(23.000000, 8.000000)">
+                    <ellipse id="Oval" fill="#000000" cx="4.5" cy="7" rx="2.5" ry="2"></ellipse>
+                    <line x1="10" y1="0" x2="0.5" y2="4.5" id="Line-2" stroke="#000000" stroke-linecap="round" transform="translate(5.000000, 2.500000) scale(-1, 1) translate(-5.000000, -2.500000) "></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></div>
+                  <div class="btn" data-text="Dislike"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" data-inject-url="https://app.birdseed.io/assets/sentiment2-e1969ed855f82446bb4fd27a16a605558b69eab4ef3c9a0a3f54d761d61df509.svg" class="sentiment-icon">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tools-latest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Base" transform="translate(-853.000000, -304.000000)">
+            <g id="Dislike" transform="translate(853.000000, 304.000000)">
+                <path d="M37.6455212,35.8284158 C40.5775486,32.3257501 40.7710848,11.0252172 38.2264416,5.17128709 C38.2482572,5.16676813 38.2608792,5.16380743 38.2608792,5.16380743 C38.2608792,5.16380743 37.6715442,3.49366015 35.7790339,2.31561262 C32.1369061,-0.57761602 11.0229118,-0.759621247 5.18114017,1.76944111 C5.18020521,1.76492214 5.17927025,1.76133814 5.17927025,1.76133814 C5.17927025,1.76133814 3.60261989,2.31717088 2.4325203,4.08424218 C-0.577264417,7.30299215 -0.794018782,28.9722103 1.78225721,34.8488911 C1.78023147,34.8493586 1.77664746,34.8501377 1.77664746,34.8501377 C1.77664746,34.8501377 2.34619254,36.4659016 4.16530861,37.6398976 C7.6562849,40.5843931 29.076322,40.7737222 34.8721249,38.207729 C35.0237439,38.1506965 36.5318307,37.5513882 37.6455212,35.8284158" id="Fill-1" fill="#CDCFD9"></path>
+                <g id="Group" transform="translate(9.000000, 12.000000)" fill="#000000">
+                    <circle id="Oval" cx="2.5" cy="2.5" r="2.5"></circle>
+                </g>
+                <g id="Group" transform="translate(28.500000, 14.500000) scale(-1, 1) translate(-28.500000, -14.500000) translate(26.000000, 12.000000)" fill="#000000">
+                    <circle id="Oval" cx="2.5" cy="2.5" r="2.5"></circle>
+                </g>
+                <path d="M11.5,29.1430927 C18.3534838,25.098046 24.3209539,25.098046 29.4024101,29.1430927" id="Path-3" stroke="#000000" stroke-width="2" stroke-linecap="round"></path>
+            </g>
+        </g>
+    </g>
+</svg></div>
+                  <div class="btn" data-text="Neutral"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" data-inject-url="https://app.birdseed.io/assets/sentiment3-1d81b499d6391f7254c48308792d6a1fbdde2457f8d08ba2287742e2340d75f7.svg" class="sentiment-icon">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tools-latest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Base" transform="translate(-917.000000, -304.000000)">
+            <g id="Neutral" transform="translate(917.000000, 304.000000)">
+                <path d="M37.6455212,35.8284158 C40.5775486,32.3257501 40.7710848,11.0252172 38.2264416,5.17128709 C38.2482572,5.16676813 38.2608792,5.16380743 38.2608792,5.16380743 C38.2608792,5.16380743 37.6715442,3.49366015 35.7790339,2.31561262 C32.1369061,-0.57761602 11.0229118,-0.759621247 5.18114017,1.76944111 C5.18020521,1.76492214 5.17927025,1.76133814 5.17927025,1.76133814 C5.17927025,1.76133814 3.60261989,2.31717088 2.4325203,4.08424218 C-0.577264417,7.30299215 -0.794018782,28.9722103 1.78225721,34.8488911 C1.78023147,34.8493586 1.77664746,34.8501377 1.77664746,34.8501377 C1.77664746,34.8501377 2.34619254,36.4659016 4.16530861,37.6398976 C7.6562849,40.5843931 29.076322,40.7737222 34.8721249,38.207729 C35.0237439,38.1506965 36.5318307,37.5513882 37.6455212,35.8284158" id="Fill-1" fill="#CDCFD9"></path>
+                <g id="Group" transform="translate(9.000000, 12.000000)" fill="#000000">
+                    <circle id="Oval" cx="2.5" cy="2.5" r="2.5"></circle>
+                </g>
+                <g id="Group" transform="translate(28.500000, 14.500000) scale(-1, 1) translate(-28.500000, -14.500000) translate(26.000000, 12.000000)" fill="#000000">
+                    <circle id="Oval" cx="2.5" cy="2.5" r="2.5"></circle>
+                </g>
+                <line x1="14.5" y1="27.5" x2="25.5" y2="27.5" id="Line-3" stroke="#000000" stroke-width="2" stroke-linecap="round"></line>
+            </g>
+        </g>
+    </g>
+</svg></div>
+                  <div class="btn" data-text="Like"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" data-inject-url="https://app.birdseed.io/assets/sentiment4-56efe792cca635568cc89c306ce29e236f70f5d7855fd6482a57cdeae16f3bb0.svg" class="sentiment-icon">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tools-latest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Base" transform="translate(-982.000000, -304.000000)">
+            <g id="Like" transform="translate(982.000000, 304.000000)">
+                <path d="M37.6455212,35.8284158 C40.5775486,32.3257501 40.7710848,11.0252172 38.2264416,5.17128709 C38.2482572,5.16676813 38.2608792,5.16380743 38.2608792,5.16380743 C38.2608792,5.16380743 37.6715442,3.49366015 35.7790339,2.31561262 C32.1369061,-0.57761602 11.0229118,-0.759621247 5.18114017,1.76944111 C5.18020521,1.76492214 5.17927025,1.76133814 5.17927025,1.76133814 C5.17927025,1.76133814 3.60261989,2.31717088 2.4325203,4.08424218 C-0.577264417,7.30299215 -0.794018782,28.9722103 1.78225721,34.8488911 C1.78023147,34.8493586 1.77664746,34.8501377 1.77664746,34.8501377 C1.77664746,34.8501377 2.34619254,36.4659016 4.16530861,37.6398976 C7.6562849,40.5843931 29.076322,40.7737222 34.8721249,38.207729 C35.0237439,38.1506965 36.5318307,37.5513882 37.6455212,35.8284158" id="Fill-1" fill="#CDCFD9"></path>
+                <circle id="Oval" fill="#000000" cx="11.5" cy="14.5" r="2.5"></circle>
+                <circle id="Oval" fill="#000000" transform="translate(28.500000, 14.500000) scale(-1, 1) translate(-28.500000, -14.500000) " cx="28.5" cy="14.5" r="2.5"></circle>
+                <path d="M11.5,29.1430927 C18.3534838,25.098046 24.3209539,25.098046 29.4024101,29.1430927" id="Path-3" stroke="#000000" stroke-width="2" stroke-linecap="round" transform="translate(20.451205, 27.626200) scale(1, -1) translate(-20.451205, -27.626200) "></path>
+            </g>
+        </g>
+    </g>
+</svg></div>
+                  <div class="btn" data-text="Love"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="0 0 40 40" version="1.1" data-inject-url="https://app.birdseed.io/assets/sentiment5-17c6c237a73d61b82fc4309f6fb2c01ebe041a6f3d86cedc3f6c07e2c1d9a980.svg" class="sentiment-icon">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tools-latest" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Base" transform="translate(-1046.000000, -304.000000)">
+            <g id="Love" transform="translate(1046.000000, 304.000000)">
+                <path d="M37.6455212,35.8284158 C40.5775486,32.3257501 40.7710848,11.0252172 38.2264416,5.17128709 C38.2482572,5.16676813 38.2608792,5.16380743 38.2608792,5.16380743 C38.2608792,5.16380743 37.6715442,3.49366015 35.7790339,2.31561262 C32.1369061,-0.57761602 11.0229118,-0.759621247 5.18114017,1.76944111 C5.18020521,1.76492214 5.17927025,1.76133814 5.17927025,1.76133814 C5.17927025,1.76133814 3.60261989,2.31717088 2.4325203,4.08424218 C-0.577264417,7.30299215 -0.794018782,28.9722103 1.78225721,34.8488911 C1.78023147,34.8493586 1.77664746,34.8501377 1.77664746,34.8501377 C1.77664746,34.8501377 2.34619254,36.4659016 4.16530861,37.6398976 C7.6562849,40.5843931 29.076322,40.7737222 34.8721249,38.207729 C35.0237439,38.1506965 36.5318307,37.5513882 37.6455212,35.8284158" id="Fill-1" fill="#CDCFD9"></path>
+                <circle id="Oval" fill="#000000" cx="11.5" cy="14.5" r="2.5"></circle>
+                <circle id="Oval" fill="#000000" transform="translate(28.500000, 14.500000) scale(-1, 1) translate(-28.500000, -14.500000) " cx="28.5" cy="14.5" r="2.5"></circle>
+                <path d="M29,25 C29,29.418278 24.7467051,33 19.5,33 C14.2532949,33 10,29.418278 10,25 L10,25 Z" id="Combined-Shape" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg></div>
+                </div>
+                <div class="sentiment-text"></div>
+              </div>
+              <form class="bsd-form" action="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#">
+                <div class="bsd-form-group">
+                  <label class="bsd-form-label" for="bsd-call-feedback-message">Message</label>
+                  <textarea type="text" class="bsd-form-field bsd-form-input bsd-form-textarea" name="email-message" id="bsd-call-feedback-message"></textarea>
+                </div>
+
+                <div class="bsd-form-group">
+                  <button type="submit" class="bsd-button-default">Send Feedback</button>
+                  <a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#bsd-home" class="bsd-menu-trigger">Continue without sending feedback</a>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+          <!-- Panel // Call Feedback Success -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-success bsd-hidden" id="bsd-call-request-success">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message birdseed-success-message text-center">
+                <div class="bsd-success-check"></div>
+                <h4 class="text-center">Tour est bon, merci !</h4>
+                <p>Merci pour votre message. Nous vous répondrons dès que possible.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Panel // Contact Form -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-contact-form">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message text-center">
+                <video width="100%" height="auto" class="video-intro" poster="" controls="" playsinline="">
+                  <source src="" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="embed-code"></div>
+                <img class="image-intro">
+                <h6 class="birdseed-title"></h6>
+                <p class="text-center larger-text"><p>Nous revenons vers vous très rapidement.</p></p>
+              </div>
+              <form class="bsd-form" action="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#">
+                <div class="bsd-form-group">
+                  <button type="submit" class="bsd-button-default">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Panel // Contact Form Confirmation-->
+          <div class="bsd-panel bsd-panel-contact-form bsd-success bsd-hidden" id="bsd-contact-form-success">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message birdseed-success-message text-center">
+                <div class="bsd-success-check"></div>
+                <h4 class="text-center">Tout est bon, merci !</h4>
+                <p>Merci pour votre message. Nous revenons vers vous très rapidement.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel // Knowledge Base -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-kb">
+            <div class="bsd-panel-inner">
+
+              <form class="bsd-form" style="display: block; z-index: 10; " action="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#">
+                <div class="bsd-form-group">
+                  <input type="text" class="bsd-form-input bsd-search-box" name="search-words" id="bsd-kb-search" required="" placeholder="Search for a topic">
+                  <i class="material-icons">search</i>
+                  <button name="btn-kb-search" id="bsd-btn-kb-search" class="btn-kb-search" style="display: none;"><i class="material-icons">arrow_forward_ios</i></button>
+                </div>
+
+                <div class="bsd-kb-filter">
+                  <span>Select a category</span>
+                  <select class="bsd-kb-select text-body-large">
+                  </select>
+                </div>
+              </form>
+
+              <div class="bsd-kb-list">
+                <ul>
+                </ul>
+                <div style="display: none;" id="bsd-kb-no-items">
+                  <div class="birdseed-message birdseed-success-message text-center">
+                    <div class="bsd-success-check"></div>
+                    <h4 class="text-center">Nothing to show yet!</h4>
+                    <p>Please Click "Add FAQ Item" to add your first question.</p>
+                  </div>
+                </div>
+              </div>
+              <div id="bsd-kb-search-results" style="display: none;" class="bsd-kb-list">
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Panel // Knowledge Base Answer-->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-kb-answer">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message">
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel // Click to Call -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-click-to-call">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message text-center">
+                <h4 class="birdseed-title text-center">Demande d'appel</h4>
+                <p class="text-center larger-text"><p>Nous vous appellerons dans les prochaines minutes</p></p>
+              </div>
+              <div class="bsd-click-to-call failed text-center" style="display: none;">
+                <i class="material-icons">sms_failed</i>
+                <strong>Sorry, we weren't able to call you.</strong>
+                <p>Please try again</p>
+              </div>
+              <div class="bsd-click-to-call waiting ready birdseed-timer">
+                <div class="progress-circle p100 over50">
+                  <div class="birdseed-duration">
+                    <div class="duration-minute">
+                      <p class="duration-value">4</p>
+                      <span>Minutes</span>
+                    </div>
+                    <div class="duration-second">
+                      <p class="duration-value">00</p>
+                      <span>Seconds</span>
+                    </div>
+                  </div>
+                  <div class="left-half-clipper">
+                    <div class="first50-bar"></div>
+                    <div class="value-bar"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="bsd-click-to-call waiting text-center" style="display: none;">
+                <p><strong class="waiting-message">C'est bon, on vous appel !</strong></p>
+                <a id="bsd-cancel-call-request" class="bsd-button-default" href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#" data-bsdnav="true">Cancel Call Request</a>
+              </div>
+              <form class="bsd-click-to-call ready bsd-form" action="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#">
+
+                <div class="bsd-form-group">
+                  <button id="bsd-click-to-call-start" class="bsd-button-default">Submit</button>
+                </div>
+              </form>
+              <div class="bsd-click-to-call active birdseed-in-progress" style="display: none;">
+                <span>&nbsp;<img src="./baseline-phone.svg">&nbsp;</span>
+                <img class="bsd-agent-avatar" style="display: none;">
+              </div>
+              <p id="bsd-click-to-call-calling" class="bsd-click-to-call active text-center" style="display: none;">
+                <strong class="bsd-agent-name">James</strong>
+                <br>
+                <strong class="bsd-calling-message">On vous appel à l'instant !</strong>
+                <a id="bsd-call-completed" class="bsd-button-default mt-5 mx-auto" href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#" style="width: 60%; margin: auto;" data-bsdnav="true">Appel terminé</a>
+                <br>
+                <a id="bsd-call-not-received" href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#">Appel non reçue</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Panel // Click to Call Confirmation-->
+          <div class="bsd-panel bsd-panel-contact-form bsd-success bsd-hidden" id="bsd-click-to-call-success">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message birdseed-success-message text-center">
+                <div class="bsd-success-check"></div>
+                <h4 class="text-center">All done thanks!</h4>
+                <p>We'll call you in just a few minutes.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel // Call Us -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-call-us">
+            <div class="bsd-panel-inner">
+
+              <div class="birdseed-message text-center">
+                <span class="birdseed-panel-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 28 28" version="1.1" data-inject-url="https://app.birdseed.io/assets/tool-icon-phone2-bb8ed793063a2076d9623d1ab84f4d134a5e940c66bf8639b9aa1b3596785348.svg" class="injectable">
+    <title>tool icon v3 / phone</title>
+    <g id="tool-icon-v3-/-phone" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M6.61665339,2.00004717 C6.20915769,1.99683419 5.82105075,2.15789848 5.53279376,2.44250824 L4.70558509,3.24640548 C0.492737084,7.3427799 0.791373769,11.3436493 8.51997732,19.3818212 L9.09090487,19.9688239 C16.5162329,27.513516 20.344297,27.8061787 24.3886561,23.5652998 L24.7779249,23.1443795 C24.897752,23.0119498 25.1071089,22.7804986 25.1802982,22.7002399 C25.7281649,22.102156 25.7155257,21.1756595 25.1529544,20.5904934 L19.8742067,15.1534021 C19.2931248,14.5537092 18.3435586,14.5360073 17.736573,15.1093789 L16.3003387,16.5382291 L16.2812453,16.5321514 C16.0893451,16.472741 15.8285123,16.3396403 15.5249321,16.1397172 C14.8888912,15.7208518 14.1335705,15.0553694 13.4253413,14.2930544 C12.7240477,13.5382048 12.1288349,12.7525342 11.7799613,12.1210031 L11.7052219,11.9806155 C11.6357905,11.8448628 11.5823306,11.7234626 11.5452692,11.620443 L11.5103387,11.5112291 L12.9339961,10.0905443 C13.5276623,9.49476914 13.5347951,8.52987483 12.952353,7.92916857 L7.69960335,2.46741309 C7.45298102,2.20968361 7.12269762,2.04771309 6.76935338,2.00904073 L6.61665339,2.00004717 Z M6.5943387,4.2022291 L11.2013387,8.9942291 L9.91453566,10.2803017 C7.97293251,12.3685691 14.7363315,19.6484722 17.1994743,18.3763831 C17.2814197,18.3341574 17.3587343,18.2836428 17.4305342,18.2249851 L17.5754769,18.09073 L18.7773387,16.8952291 L23.4143387,21.6702291 L23.2156479,21.8900393 C21.5667568,23.7059133 20.5981122,24.3373971 19.1273984,24.2498037 C16.9901708,24.1225137 14.0354948,22.2320436 9.96163184,17.9955917 C6.01385488,13.889687 4.21917157,10.8925812 4.05641835,8.71215794 C3.94908938,7.27425966 4.46489972,6.31151096 5.89003114,4.88703977 L6.5943387,4.2022291 Z" id="Shape" fill="currentColor" fill-rule="nonzero"></path>
+    </g>
+</svg></span>
+                <h4 class="birdseed-title">Appelez-nous !</h4>
+                <p class="text-center"><p>Nous serons ravis de répondre à vos questions par téléphone</p></p>
+              </div>
+
+              <div class="call-numbers-group">
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Panel // No phone contacts-->
+          <div class="bsd-panel bsd-panel-contact-form bsd-success bsd-hidden" id="bsd-call-us-no-items">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message birdseed-success-message text-center">
+                <div class="bsd-success-check"></div>
+                <h4 class="text-center">Nothing to show yet!</h4>
+                <p>Please Click "Add new contact location" to add your first contact location.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel // Schedule Demo -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-schedule-demo">
+            <div class="bsd-panel-inner">
+
+              <div class="birdseed-message text-center">
+                <h4 class="text-center birdseed-title">Choisissez la date et l'heure du RDV</h4>
+              </div>
+              <form class="bsd-form" action="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#">
+
+                <div id="bsd-schedule-demo-events" class="bsd-sub-panel bsd-sp-current" data-order="01">
+                  <div class="bsd-form-group">
+                    <label class="bsd-form-label-plain">Pick your event type</label>
+                    <div class="bsd-form-group-radio">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bsd-sub-panel" data-order="02">
+                  <div class="bsd-content-chosen">
+                    <div class="bsd-event-type-info">
+                      <h5><span class="title">title</span><span class="duration">duration</span></h5>
+                      <p>description</p>
+                    </div>
+                  </div>
+                  <div class="bsd-row bsd-display-none">
+                    <a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#" id="bsd-schedule-earlier-days" class="bsd-time-links">Show Earlier Days</a>
+                  </div>
+                  <div class="bsd-form-group-radio bsd-schedule-days">
+                    <div class="bsd-schedule-days-loading-icon">
+                      <img src="./loading_50px.gif">
+                    </div>
+                    <input type="radio" id="demo-date-1" name="demo-date"><label for="demo-date-1" class="transparent" style="display:none">Sun Apr 20</label>
+                    <input type="radio" id="demo-date-2" name="demo-date"><label for="demo-date-2" class="transparent" style="display:none">Mon Apr 21</label>
+                    <input type="radio" id="demo-date-3" name="demo-date"><label for="demo-date-3" class="transparent" style="display:none">Tue Apr 22</label>
+                    <input type="radio" id="demo-date-4" name="demo-date"><label for="demo-date-4" class="transparent" style="display:none">Wed Apr 23</label>
+                    <input type="radio" id="demo-date-5" name="demo-date"><label for="demo-date-5" class="transparent" style="display:none">Thu Apr 24</label>
+                    <input type="radio" id="demo-date-6" name="demo-date"><label for="demo-date-6" class="transparent" style="display:none">Fri Apr 25</label>
+                    <input type="radio" id="demo-date-7" name="demo-date"><label for="demo-date-7" class="transparent" style="display:none">Sat Apr 26</label>
+                    <input type="radio" id="demo-date-8" name="demo-date"><label for="demo-date-8" class="transparent" style="display:none">Sun Apr 27</label>
+                    <input type="radio" id="demo-date-9" name="demo-date"><label for="demo-date-9" class="transparent" style="display:none">Mon Apr 28</label>
+                    <input type="radio" id="demo-date-10" name="demo-date"><label for="demo-date-10" class="transparent" style="display:none">Tue Apr 29</label>
+                    <input type="radio" id="demo-date-11" name="demo-date"><label for="demo-date-11" class="transparent" style="display:none">Tue Apr 29</label>
+                    <input type="radio" id="demo-date-12" name="demo-date"><label for="demo-date-12" class="transparent" style="display:none">Tue Apr 29</label>
+                    <input type="radio" id="demo-date-13" name="demo-date"><label for="demo-date-13" class="transparent" style="display:none">Tue Apr 29</label>
+                    <input type="radio" id="demo-date-14" name="demo-date"><label for="demo-date-14" class="transparent" style="display:none">Tue Apr 29</label>
+                    <input type="radio" id="demo-date-15" name="demo-date"><label for="demo-date-15" class="transparent" style="display:none">Tue Apr 29</label>
+                    <input type="radio" id="demo-date-16" name="demo-date"><label for="demo-date-16" class="transparent" style="display:none">Tue Apr 29</label>
+                    <input type="radio" id="demo-date-17" name="demo-date"><label for="demo-date-17" class="transparent" style="display:none">Tue Apr 29</label>
+                    <input type="radio" id="demo-date-18" name="demo-date"><label for="demo-date-18" class="transparent" style="display:none">Tue Apr 29</label>
+                    <input type="radio" id="demo-date-19" name="demo-date"><label for="demo-date-19" class="transparent" style="display:none">Tue Apr 29</label>
+                    <input type="radio" id="demo-date-20" name="demo-date"><label for="demo-date-20" class="transparent" style="display:none">Tue Apr 29</label>
+                  </div>
+                  <div class="bsd-row bsd-display-none">
+                    <a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#" id="bsd-schedule-later-days" class="bsd-time-links">Show Later Days</a>
+                  </div>
+                </div>
+
+                <div class="bsd-sub-panel" data-order="03">
+                  <div class="bsd-content-chosen">
+                    <div class="bsd-event-type-info">
+                      <h5><span class="title">title</span><span class="duration">duration</span></h5>
+                      <p>description</p>
+                    </div>
+                    <p class="bsd-schedule-day">Jan 1st, 2019</p>
+                  </div>
+                  <div class="bsd-row bsd-row-reg bsd-kb-filter">
+                    <div style="margin:auto;display:flex;align-items:center;">
+                      <div>Timezone</div>
+                      <select name="schedule-timezone" id="schedule-timezone" class="form-control inline-block bsd-timezone-dropdown bsd-kb-select"><option value="America/New_York">Eastern Time (US &amp; Canada)</option>
+<option value="America/Chicago">Central Time (US &amp; Canada)</option>
+<option value="America/Denver">Mountain Time (US &amp; Canada)</option>
+<option value="America/Los_Angeles">Pacific Time (US &amp; Canada)</option>
+<option value="Africa/Algiers">West Central Africa</option>
+<option value="Africa/Cairo">Cairo</option>
+<option value="Africa/Casablanca">Casablanca</option>
+<option value="Africa/Harare">Harare</option>
+<option value="Africa/Johannesburg">Pretoria</option>
+<option value="Africa/Monrovia">Monrovia</option>
+<option value="Africa/Nairobi">Nairobi</option>
+<option value="America/Argentina/Buenos_Aires">Buenos Aires</option>
+<option value="America/Bogota">Bogota</option>
+<option value="America/Caracas">Caracas</option>
+<option value="America/Chihuahua">Chihuahua</option>
+<option value="America/Godthab">Greenland</option>
+<option value="America/Guatemala">Central America</option>
+<option value="America/Guyana">Georgetown</option>
+<option value="America/Halifax">Atlantic Time (Canada)</option>
+<option value="America/Indiana/Indianapolis">Indiana (East)</option>
+<option value="America/Juneau">Alaska</option>
+<option value="America/La_Paz">La Paz</option>
+<option value="America/Lima">Quito</option>
+<option value="America/Mazatlan">Mazatlan</option>
+<option value="America/Mexico_City">Mexico City</option>
+<option value="America/Monterrey">Monterrey</option>
+<option value="America/Montevideo">Montevideo</option>
+<option value="America/Phoenix">Arizona</option>
+<option value="America/Regina">Saskatchewan</option>
+<option value="America/Santiago">Santiago</option>
+<option value="America/Sao_Paulo">Brasilia</option>
+<option value="America/St_Johns">Newfoundland</option>
+<option value="America/Tijuana">Tijuana</option>
+<option value="Asia/Almaty">Almaty</option>
+<option value="Asia/Baghdad">Baghdad</option>
+<option value="Asia/Baku">Baku</option>
+<option value="Asia/Bangkok">Hanoi</option>
+<option value="Asia/Chongqing">Chongqing</option>
+<option value="Asia/Colombo">Sri Jayawardenepura</option>
+<option value="Asia/Dhaka">Dhaka</option>
+<option value="Asia/Hong_Kong">Hong Kong</option>
+<option value="Asia/Irkutsk">Irkutsk</option>
+<option value="Asia/Jakarta">Jakarta</option>
+<option value="Asia/Jerusalem">Jerusalem</option>
+<option value="Asia/Kabul">Kabul</option>
+<option value="Asia/Kamchatka">Kamchatka</option>
+<option value="Asia/Karachi">Karachi</option>
+<option value="Asia/Kathmandu">Kathmandu</option>
+<option value="Asia/Kolkata">New Delhi</option>
+<option value="Asia/Krasnoyarsk">Krasnoyarsk</option>
+<option value="Asia/Kuala_Lumpur">Kuala Lumpur</option>
+<option value="Asia/Kuwait">Kuwait</option>
+<option value="Asia/Magadan">Magadan</option>
+<option value="Asia/Muscat">Muscat</option>
+<option value="Asia/Novosibirsk">Novosibirsk</option>
+<option value="Asia/Rangoon">Rangoon</option>
+<option value="Asia/Riyadh">Riyadh</option>
+<option value="Asia/Seoul">Seoul</option>
+<option value="Asia/Shanghai">Beijing</option>
+<option value="Asia/Singapore">Singapore</option>
+<option value="Asia/Taipei">Taipei</option>
+<option value="Asia/Tashkent">Tashkent</option>
+<option value="Asia/Tbilisi">Tbilisi</option>
+<option value="Asia/Tehran">Tehran</option>
+<option value="Asia/Tokyo">Tokyo</option>
+<option value="Asia/Ulaanbaatar">Ulaanbaatar</option>
+<option value="Asia/Urumqi">Urumqi</option>
+<option value="Asia/Vladivostok">Vladivostok</option>
+<option value="Asia/Yakutsk">Yakutsk</option>
+<option value="Asia/Yekaterinburg">Ekaterinburg</option>
+<option value="Asia/Yerevan">Yerevan</option>
+<option value="Atlantic/Azores">Azores</option>
+<option value="Atlantic/Cape_Verde">Cape Verde Is.</option>
+<option value="Atlantic/South_Georgia">Mid-Atlantic</option>
+<option value="Australia/Adelaide">Adelaide</option>
+<option value="Australia/Brisbane">Brisbane</option>
+<option value="Australia/Darwin">Darwin</option>
+<option value="Australia/Hobart">Hobart</option>
+<option value="Australia/Melbourne">Melbourne</option>
+<option value="Australia/Perth">Perth</option>
+<option value="Australia/Sydney">Sydney</option>
+<option value="Etc/UTC">UTC</option>
+<option value="Europe/Amsterdam">Amsterdam</option>
+<option value="Europe/Athens">Athens</option>
+<option value="Europe/Belgrade">Belgrade</option>
+<option value="Europe/Berlin">Bern</option>
+<option value="Europe/Bratislava">Bratislava</option>
+<option value="Europe/Brussels">Brussels</option>
+<option value="Europe/Bucharest">Bucharest</option>
+<option value="Europe/Budapest">Budapest</option>
+<option value="Europe/Copenhagen">Copenhagen</option>
+<option value="Europe/Dublin">Dublin</option>
+<option value="Europe/Helsinki">Helsinki</option>
+<option value="Europe/Istanbul">Istanbul</option>
+<option value="Europe/Kiev">Kyiv</option>
+<option value="Europe/Lisbon">Lisbon</option>
+<option value="Europe/Ljubljana">Ljubljana</option>
+<option value="Europe/London">London</option>
+<option value="Europe/Madrid">Madrid</option>
+<option value="Europe/Minsk">Minsk</option>
+<option value="Europe/Moscow">Volgograd</option>
+<option selected="selected" value="Europe/Paris">Paris</option>
+<option value="Europe/Prague">Prague</option>
+<option value="Europe/Riga">Riga</option>
+<option value="Europe/Rome">Rome</option>
+<option value="Europe/Sarajevo">Sarajevo</option>
+<option value="Europe/Skopje">Skopje</option>
+<option value="Europe/Sofia">Sofia</option>
+<option value="Europe/Stockholm">Stockholm</option>
+<option value="Europe/Tallinn">Tallinn</option>
+<option value="Europe/Vienna">Vienna</option>
+<option value="Europe/Vilnius">Vilnius</option>
+<option value="Europe/Warsaw">Warsaw</option>
+<option value="Europe/Zagreb">Zagreb</option>
+<option value="Pacific/Apia">Samoa</option>
+<option value="Pacific/Auckland">Wellington</option>
+<option value="Pacific/Chatham">Chatham Is.</option>
+<option value="Pacific/Fakaofo">Tokelau Is.</option>
+<option value="Pacific/Fiji">Fiji</option>
+<option value="Pacific/Guadalcanal">Solomon Is.</option>
+<option value="Pacific/Guam">Guam</option>
+<option value="Pacific/Honolulu">Hawaii</option>
+<option value="Pacific/Majuro">Marshall Is.</option>
+<option value="Pacific/Midway">Midway Island</option>
+<option value="Pacific/Noumea">New Caledonia</option>
+<option value="Pacific/Pago_Pago">American Samoa</option>
+<option value="Pacific/Port_Moresby">Port Moresby</option>
+<option value="Pacific/Tongatapu">Nuku'alofa</option></select>
+                    </div>
+                  </div>
+                  <div class="bsd-row">
+                  <a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#" id="bsd-schedule-earlier-times" class="bsd-time-links mt-0 mb-2">Show Earlier Times</a>
+                  </div>
+                  <div class="bsd-form-group-radio bsd-schedule-times">
+                  <input type="radio" id="demo-time-1" name="demo-time"><label for="demo-time-1" class="transparent">8:00 AM</label>
+                  <input type="radio" id="demo-time-2" name="demo-time"><label for="demo-time-2" class="transparent">9:00 AM</label>
+                  <input type="radio" id="demo-time-3" name="demo-time"><label for="demo-time-3" class="transparent">10:00 AM</label>
+                  <input type="radio" id="demo-time-4" name="demo-time"><label for="demo-time-4" class="transparent">11:00 AM</label>
+                  <input type="radio" id="demo-time-5" name="demo-time"><label for="demo-time-5" class="transparent">12:00 PM</label>
+                  <input type="radio" id="demo-time-6" name="demo-time"><label for="demo-time-6" class="transparent">1:00 PM</label>
+                  <input type="radio" id="demo-time-7" name="demo-time"><label for="demo-time-7" class="transparent">2:00 PM</label>
+                  </div>
+                  <div class="bsd-row">
+                  <a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#" id="bsd-schedule-later-times" class="bsd-time-links mt-0 mb-2">Show Later Times</a>
+                  </div>
+                </div>
+
+                <div id="bsd-schedule-demo-form" class="bsd-sub-panel" data-order="04">
+                  <div class="bsd-content-chosen">
+                    <div class="bsd-event-type-info">
+                      <h5><span class="title">title</span><span class="duration">duration</span></h5>
+                      <p>description</p>
+                    </div>
+                    <p class="bsd-schedule-day">Jan 1st, 2019</p>
+                    <p class="bsd-schedule-time">Jan 1st, 2019</p>
+                  </div>
+
+                  <label class="bsd-form-label-plain">Tell us about yourself</label>
+
+                  <div class="bsd-form">
+                  </div>
+
+                  <div class="bsd-form-group">
+                    <button type="submit" class="bsd-button-default">Confirm</button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+          <!-- Panel // Schedule Confirmation-->
+          <div class="bsd-panel bsd-panel-contact-form bsd-success bsd-hidden" id="bsd-schedule-demo-success">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message birdseed-success-message text-center">
+                <div class="bsd-success-check"></div>
+                <p id="schedule-success-message">Votre réunion est planifiée</p>
+                <h4 class="text-center">Meeting</h4>
+                <span style="color: #9FA1AB;">30 minutes</span>
+                <p class="date">Monday, April 29, 2019</p>
+                <p class="time">12:00 PM</p>
+                <p class="timezone">(UTC-05:00 EST)</p>
+                <div id="bsd-schedule-success-details"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel // Newsletter -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-newsletter">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message text-center">
+                <video width="100%" height="auto" class="video-intro mb-2" poster="" controls="" playsinline="">
+                  <source src="" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="embed-code"></div>
+                <img class="image-intro mb-3">
+                <h4 class="birdseed-title">Laissez-nous vos coordonées</h4>
+                <p class="text-center"><p>Nous prendrons contact avec vous rapidement. Laissez-nous vos questions et vos coordonnées. A très vite.</p></p>
+              </div>
+              <form class="bsd-form" action="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#">
+                <div class="bsd-form-group">
+                  <button type="submit" class="bsd-button-default">Subscribe Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Panel // Register Confirmation-->
+          <div class="bsd-panel bsd-panel-contact bsd-success bsd-hidden" id="bsd-newsletter-success">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message birdseed-success-message text-center">
+                <div class="bsd-success-check"></div>
+                <h4 class="text-center">All done thanks!</h4>
+                <p>You are now registered!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel // On Demand Webinar -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-webinar">
+            <div class="bsd-panel-inner">
+
+              <div id="bsd-webinar-video"></div>
+              <div class="bsd-webinar-list">
+                <p></p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Panel // Webinar no videos message-->
+          <div class="bsd-panel bsd-panel-contact-form bsd-success bsd-hidden" id="bsd-webinar-no-videos">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-message birdseed-success-message text-center">
+                <div class="bsd-success-check"></div>
+                <h4 class="text-center">No Video Added Yet!</h4>
+                <p>Please Click "Add Video" to add your first Video and click on Pencil icon to edit the Initial Default Section of "Video Library".</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel // Live Chat -->
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-livechat-close">
+            <div class="bsd-panel-inner">
+              <div class="birdseed-chat-register bsd-sub-panel bsd-sp-current">
+                <div class="birdseed-message text-center">
+                  <h3>Vous êtes dans un chat actif</h3>
+                  <p style="margin-bottom: 60px;">Vous êtes sur le point de mettre fin au chat en direct en cours. Voulez-vous rester et continuer le chat ou quitter et terminer le chat ?</p>
+                  <button id="close-chat-continue" class="bsd-button-default bsd-button-half">Continuer la conversation</button>
+                  <button id="close-chat-confirm" class="bsd-button-default bsd-button-half">Terminer la conversation</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bsd-panel bsd-panel-contact-form bsd-hidden" id="bsd-livechat">
+            <div class="bsd-panel-inner">
+
+              <div class="birdseed-chat-register bsd-sub-panel bsd-sp-current">
+                <div class="birdseed-message text-center">
+                  <video width="100%" height="auto" class="video-intro" poster="" controls="" playsinline="">
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                  <div class="embed-code"></div>
+                  <img class="image-intro">
+                  <h4 class="birdseed-title" style="margin-top: 16px;">Chat en direct</h4>
+                  <p class="text-center"><p>On arrive de suite ! Renseignez vos coordonnées svp.</p></p>
+                </div>
+                <form class="bsd-form" action="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#">
+                  <div class="bsd-form-group">
+                    <button type="submit" class="bsd-button-default" disabled="disabled">Démarrer la conversation</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="birdseed-chat-box bsd-sub-panel bsd-sp-hidden">
+
+                <div class="birdseed-chat-dialogue">
+                  <div class="bsd-single-message bsd-message-to bsd-message-full">
+                    <!-- VIDEO -->
+                  </div>
+                </div>
+                <div class="birdseed-chat-entry">
+                  <form>
+                    <div class="send-box">
+                      <textarea class="bsd-form-input plain" placeholder="Tapez le message ici"></textarea>
+                      <div class="send-actions">
+                        <button class="bsd-button-default-bold btn btn-primary btn-sm">Envoyer</button>
+                        <!--<span class="insert"><i class="material-icons">insert_emoticon</i></span>
+                        <span class="insert"><i class="material-icons">insert_link</i></span>
+                        <span class="insert"><i class="material-icons">photo</i></span>//-->
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="birdseed-chat-inactive-popup-wrapper" style="display: none;">
+              <div class="birdseed-chat-inactive-popup">
+                <h2>Continue Chat?</h2>
+                <p>60 Seconds</p>
+                <div class="birdseed-chat-inactive-popup__actions">
+                  <a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#" class="bsd-button-default btn btn-primary" id="close-chat-continue--inactive" disabled="disabled">Continue</a>
+                  <a href="https://app.birdseed.io/widget/panel.html?referrer=https://docs.google.com/&amp;available=true&amp;token=b8c28e45b5000ed11787008b4a18d984&amp;live_url=https://www.iabako.com/fr/&amp;preview=null#" class="bsd-button-default btn btn-primary" id="close-chat-confirm--inactive" disabled="disabled">End Chat</a>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end bsd-livechat //-->
+
+
+        </div>
+
+        <div id="birdseed-footer-branding" class="birdseed-tail hidden">
+          <a target="_blank" href="https://www.birdseed.io/?utm_source=widget&amp;utm_medium=footer&amp;utm_content=" +="" window.location.hostname="" ""="" class="pb-bs" title="Powered by BirdSeed">
+            <span>Powered by </span>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71px" height="17px" viewBox="0 0 71 17" version="1.1" data-inject-url="https://app.birdseed.io/assets/footer-logo-62d2c97c63579fe6d03650da87872527c5fa86c8d4941084a69513e84a28f5ef.svg" class="footer-logo">
+    <title>Combined Shape</title>
+    <g id="Base-panel" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-937.000000, -702.000000)" fill="currentColor" id="Group-4">
+            <g transform="translate(736.000000, 687.000000)">
+                <g id="Group-8" transform="translate(134.000000, 14.000000)">
+                    <g id="Group-29" transform="translate(67.125000, 1.000000)">
+                        <path d="M12.5550848,7.55156449 L12.5629321,7.62072637 L12.5629321,16.5220011 C12.5629321,16.7407593 12.3348658,16.900111 12.0960647,16.8532209 C10.6690966,16.5728143 9.51238037,16.0559022 8.62685782,15.302111 C7.64717082,14.4681769 7.15657401,13.372144 7.15657401,12.0147593 C7.15657401,10.6573747 7.65451565,9.56918791 8.65039894,8.7487044 C9.5509878,8.00742967 10.7033724,7.52022088 12.1079294,7.28707802 C12.3173512,7.25237228 12.5139759,7.37368554 12.5550848,7.55156449 Z M2.7292626,10.9347549 C3.10422546,10.9347549 3.4548939,11.0001396 3.78145623,11.1303484 C4.10764191,11.2609308 4.39239523,11.4471835 4.63571618,11.6894802 C4.87847215,11.9317769 5.07320424,12.2237659 5.21897082,12.5652604 C5.33573475,12.8387549 5.40573284,13.1337703 5.42906152,13.4507848 L5.43780902,13.692678 L5.43780902,13.7300407 C5.43780902,14.1399088 5.36492573,14.5157769 5.21897082,14.8572714 C5.07320424,15.1991396 4.87847215,15.4909418 4.63571618,15.7330516 C4.39239523,15.9753484 4.10764191,16.1617879 3.78145623,16.2921835 C3.4548939,16.4225791 3.10422546,16.4877769 2.7292626,16.4877769 C2.35429973,16.4877769 2.00344297,16.4225791 1.67725729,16.2921835 C1.35069496,16.1617879 1.06255172,15.9753484 0.812450928,15.7330516 C0.562538462,15.4909418 0.364604775,15.1991396 0.218649867,14.8572714 C0.102036605,14.5840758 0.0320686472,14.2888811 0.00874599469,13.9718785 L0,13.7300407 L0,13.692678 C0,13.2704802 0.0728832891,12.8914363 0.218649867,12.5561066 C0.364604775,12.2205901 0.562538462,11.9317769 0.812450928,11.6894802 C1.06255172,11.4471835 1.35069496,11.2609308 1.67725729,11.1303484 C2.00344297,11.0001396 2.35429973,10.9347549 2.7292626,10.9347549 Z M53.6687305,6.57221868 C54.1932265,6.57221868 54.6472875,6.66525165 55.0311019,6.85169121 C55.4147279,7.03813077 55.733757,7.28864725 55.9883777,7.60324066 C56.2428101,7.91783407 56.4307623,8.27894396 56.5522345,8.68675714 C56.6735183,9.09457033 56.7341602,9.51975714 56.7341602,9.9625044 C56.7341602,10.0323725 56.7322769,10.1063505 56.728322,10.183878 L56.7202239,10.3402407 C56.7175873,10.3897462 56.6763432,10.4286033 56.6264361,10.4286033 L52.4491125,10.4286033 C52.3871523,10.4286033 52.3421416,10.4874495 52.3583379,10.546856 C52.4523141,10.8924604 52.6210568,11.1581088 52.8641894,11.3430538 C53.1342531,11.548922 53.4689135,11.651856 53.8683592,11.651856 C54.1657305,11.651856 54.4320276,11.6014165 54.6670621,11.5005374 C54.882322,11.407878 55.1043618,11.2630978 55.3328048,11.0660099 C55.3685873,11.0349989 55.4218844,11.0344385 55.4574785,11.0656363 L56.3486509,11.8480099 C56.3866934,11.8816363 56.3915899,11.9395484 56.3586324,11.9780319 C56.0725607,12.3099989 55.7320621,12.5720978 55.3365714,12.7645154 C54.9135846,12.9701967 54.416208,13.0733176 53.844818,13.0733176 C53.3749374,13.0733176 52.938391,12.9956033 52.5351788,12.8401747 C52.1317782,12.684933 51.7835581,12.4635593 51.4899533,12.1762407 C51.1963485,11.888922 50.9671523,11.5470538 50.8027411,11.1510099 C50.63833,10.7547791 50.5562186,10.319878 50.5562186,9.84611978 L50.5562186,9.82276813 C50.5562186,9.38002088 50.6324918,8.96043846 50.7852265,8.56439451 C50.9379613,8.16835055 51.1511496,7.82274615 51.4251682,7.52758132 C51.6993751,7.23241648 52.0281973,6.99946044 52.4118233,6.82833956 C52.7954493,6.65777912 53.2144812,6.57221868 53.6687305,6.57221868 Z M60.5496286,6.57221868 C61.0741247,6.57221868 61.528374,6.66525165 61.9121883,6.85169121 C62.2958143,7.03813077 62.6148435,7.28864725 62.8692759,7.60324066 C63.1238966,7.91783407 63.3116605,8.27894396 63.4331326,8.68675714 C63.5544164,9.09457033 63.6152467,9.51975714 63.6152467,9.9625044 C63.6152467,10.0323725 63.6131751,10.1063505 63.6094085,10.183878 L63.601122,10.3402407 C63.5986737,10.3897462 63.5574297,10.4286033 63.5073342,10.4286033 L59.3301989,10.4286033 C59.2682387,10.4286033 59.2232281,10.4874495 59.2394244,10.546856 C59.3334005,10.8924604 59.5019549,11.1581088 59.7450875,11.3430538 C60.0153395,11.548922 60.35,11.651856 60.7494456,11.651856 C61.046817,11.651856 61.3131141,11.6014165 61.5479602,11.5005374 C61.7634085,11.407878 61.9852599,11.2630978 62.2138912,11.0660099 C62.2496737,11.0349989 62.3029708,11.0344385 62.3383767,11.0656363 L63.2297374,11.8480099 C63.2677798,11.8816363 63.2726764,11.9395484 63.2395305,11.9780319 C62.9536472,12.3099989 62.6129602,12.5720978 62.2176578,12.7645154 C61.7946711,12.9701967 61.2972944,13.0733176 60.7259045,13.0733176 C60.2560239,13.0733176 59.8194775,12.9956033 59.4162653,12.8401747 C59.0128647,12.684933 58.6646446,12.4635593 58.3708515,12.1762407 C58.0772467,11.888922 57.8482387,11.5470538 57.6838276,11.1510099 C57.5194164,10.7547791 57.4371167,10.319878 57.4371167,9.84611978 L57.4371167,9.82276813 C57.4371167,9.38002088 57.5133899,8.96043846 57.666313,8.56439451 C57.8188594,8.16835055 58.0320477,7.82274615 58.3062546,7.52758132 C58.5802732,7.23241648 58.9092838,6.99946044 59.2929098,6.82833956 C59.6765358,6.65777912 60.0953793,6.57221868 60.5496286,6.57221868 Z M42.2069011,4.42846264 C42.2588798,4.42846264 42.3008772,4.47012198 42.3008772,4.52168242 L42.3008772,12.8402868 C42.3008772,12.8916604 42.2588798,12.9335066 42.2069011,12.9335066 L40.6094952,12.9335066 C40.5577048,12.9335066 40.5155191,12.8916604 40.5155191,12.8402868 L40.5155191,12.2994626 C40.5155191,12.2137154 40.4091133,12.1735505 40.3518613,12.2378143 C40.1684289,12.4438692 39.9586305,12.6194736 39.7228427,12.7646275 C39.4134183,12.9548033 39.0239541,13.0498912 38.5540735,13.0498912 C38.1860788,13.0498912 37.8297605,12.9800231 37.4853069,12.8402868 C37.140665,12.7005505 36.8351955,12.4926275 36.5692751,12.2168912 C36.302978,11.9413418 36.089413,11.6033967 35.9291451,11.2034297 C35.7685005,10.8034626 35.6882724,10.3431549 35.6882724,9.82269341 L35.6882724,9.79952857 C35.6882724,9.27906703 35.7685005,8.81894615 35.9291451,8.41879231 C36.089413,8.01882527 36.3009064,7.68088022 36.5634369,7.40514396 C36.8255907,7.12959451 37.1289886,6.92167143 37.4736305,6.78193516 C37.8180841,6.64201209 38.1783573,6.57214396 38.5540735,6.57214396 C39.0316756,6.57214396 39.4250947,6.66536374 39.7345191,6.8518033 C39.9701186,6.99378132 40.1774687,7.15369341 40.3561928,7.33191319 C40.4149515,7.39038571 40.5155191,7.34779231 40.5155191,7.26540769 L40.5155191,4.52168242 C40.5155191,4.47012198 40.5577048,4.42846264 40.6094952,4.42846264 L42.2069011,4.42846264 Z M46.4653568,4.66132527 C47.0683859,4.66132527 47.6222613,4.75006154 48.1275477,4.92734725 C48.5121154,5.06241319 48.8729536,5.24231429 49.209874,5.46667692 C49.3852082,5.58362198 49.4277706,5.82180879 49.3076167,5.99405055 L48.7895239,6.73719341 C48.6750199,6.90121538 48.4512851,6.94997363 48.2797175,6.84629231 C48.0153037,6.68656703 47.7552215,6.5543033 47.4990942,6.44987473 C47.1467308,6.30602857 46.7943674,6.23429231 46.442004,6.23429231 C46.0896406,6.23429231 45.8252268,6.30229231 45.6491393,6.43847912 C45.4730517,6.57466593 45.3849138,6.74391868 45.3849138,6.94623736 L45.3849138,6.96958901 C45.3849138,7.10185275 45.4103382,7.21674286 45.4613753,7.31388571 C45.5124125,7.41121538 45.6045053,7.49883077 45.7382188,7.57654505 C45.8715557,7.65444615 46.0542347,7.72823736 46.285691,7.79810549 C46.5173355,7.86834725 46.8098103,7.94998462 47.1631154,8.0432044 C47.579134,8.1523033 47.9501419,8.27485275 48.2761393,8.41085275 C48.6019483,8.54703956 48.8765318,8.7105011 49.1004549,8.90105055 C49.3241897,9.09178681 49.4931207,9.31558901 49.6068714,9.57227033 C49.720622,9.82895165 49.7776857,10.1362593 49.7776857,10.4940066 L49.7776857,10.5173582 C49.7776857,10.9219956 49.7036724,11.2819846 49.5560225,11.5971385 C49.407996,11.9122923 49.2019642,12.1768198 48.9375504,12.3907209 C48.6729483,12.604622 48.3571207,12.7680835 47.9906326,12.8809187 C47.6235796,12.993567 47.2171658,13.0499846 46.7708263,13.0499846 C46.144256,13.0499846 45.5297387,12.9438747 44.9267095,12.7318418 C44.4442109,12.5624022 43.9969297,12.3199187 43.584866,12.004578 C43.4142401,11.8741824 43.389569,11.6277758 43.5276141,11.4637538 L44.1170836,10.7645121 C44.2447706,10.6131934 44.4690703,10.5836769 44.6304682,10.6991275 C44.9174814,10.9044352 45.2099562,11.0744352 45.5082692,11.2091275 C45.9035716,11.3879077 46.3361631,11.4772044 46.8060438,11.4772044 C47.1819483,11.4772044 47.4734814,11.4090176 47.6810199,11.2728308 C47.8885584,11.136644 47.9923276,10.9481495 47.9923276,10.7069736 L47.9923276,10.683622 C47.9923276,10.5668637 47.9706698,10.4639297 47.9275424,10.3742593 C47.8842268,10.2847758 47.8019271,10.2010835 47.6802666,10.1231824 C47.5586061,10.0454681 47.3896751,9.96775385 47.1738501,9.88985275 C46.9578369,9.81213846 46.6772268,9.73031429 46.3318316,9.64475385 C45.9156247,9.53602857 45.5387785,9.42113846 45.2012931,9.30064396 C44.8636194,9.18014945 44.5769828,9.02827033 44.3415716,8.84556703 C44.1059721,8.66267692 43.9234814,8.43495165 43.7939111,8.16257802 C43.6643408,7.8902044 43.5995557,7.55188571 43.5995557,7.14724835 L43.5995557,7.1238967 C43.5995557,6.75045714 43.6696141,6.41419341 43.8095424,6.11454505 C43.9496592,5.8148967 44.1458979,5.55616044 44.3988236,5.33814945 C44.6517493,5.12051209 44.9536406,4.95331429 45.3046857,4.83655604 C45.6555424,4.7197978 46.0425584,4.66132527 46.4653568,4.66132527 Z M70.6164682,4.42846264 C70.7567732,4.42846264 70.8705239,4.5412978 70.8705239,4.68047363 L70.8705239,12.8402868 C70.8705239,12.8916604 70.8283382,12.9335066 70.7765477,12.9335066 L69.3392215,12.9335066 C69.1989164,12.9335066 69.0851658,12.8206714 69.0851658,12.6814956 C69.0851658,12.4638582 68.8275318,12.3502758 68.6623674,12.4935615 C68.5471101,12.5933198 68.4237546,12.6835505 68.2923011,12.7646275 C67.9828767,12.9548033 67.5934125,13.0498912 67.1237202,13.0498912 C66.7555371,13.0498912 66.3994072,12.9800231 66.0549536,12.8402868 C65.7101233,12.7005505 65.4048422,12.4926275 65.1387334,12.2168912 C64.8724363,11.9413418 64.6590597,11.6033967 64.4986034,11.2034297 C64.3379589,10.8034626 64.2579191,10.3431549 64.2579191,9.82269341 L64.2579191,9.79952857 C64.2579191,9.27906703 64.3379589,8.81894615 64.4986034,8.41879231 C64.6590597,8.01882527 64.8705531,7.68088022 65.1328952,7.40514396 C65.3950491,7.12959451 65.6984469,6.92167143 66.0430889,6.78193516 C66.3875424,6.64201209 66.7478156,6.57214396 67.1237202,6.57214396 C67.6013223,6.57214396 67.9947414,6.66536374 68.3039775,6.8518033 C68.436561,6.93157253 68.5601048,7.01713297 68.6746088,7.10848462 C68.8397732,7.2400011 69.0851658,7.12025385 69.0851658,6.91008901 L69.0851658,4.68047363 C69.0851658,4.5412978 69.1989164,4.42846264 69.3392215,4.42846264 L70.6164682,4.42846264 Z M24.3575199,4.7778967 C25.3031194,4.7778967 26.0183926,5.0186989 26.5029629,5.5003033 C26.8781141,5.8729956 27.0656897,6.33535824 27.0656897,6.88664396 L27.0656897,6.9099956 C27.0656897,7.36824835 26.9606021,7.73533626 26.7506154,8.01088571 C26.5779178,8.23749011 26.3765942,8.42598462 26.1464562,8.57636923 C26.0841194,8.61709451 26.0908992,8.70919341 26.1590743,8.73945714 C26.3280053,8.81418242 26.484695,8.89563297 26.6293316,8.98380879 C26.8202971,9.10038022 26.9820716,9.23843516 27.1144668,9.39741319 C27.2470504,9.55676484 27.3483714,9.74114945 27.4184297,9.95094066 C27.4884881,10.1605451 27.5237056,10.4015341 27.5237056,10.6731604 L27.5237056,10.6965121 C27.5237056,11.0693912 27.4515756,11.395567 27.3067507,11.6752264 C27.1623024,11.9548857 26.9549523,12.1878418 26.6852653,12.3742813 C26.4155782,12.5607209 26.0912759,12.7004571 25.7119814,12.7936769 C25.3328753,12.8868967 24.9129019,12.9334132 24.4516844,12.9334132 L20.6410371,12.9334132 C20.5890584,12.9334132 20.547061,12.8917538 20.547061,12.8401934 L20.547061,4.87111648 C20.547061,4.81955604 20.5890584,4.7778967 20.6410371,4.7778967 L24.3575199,4.7778967 Z M30.1197443,6.68856593 C30.1715347,6.68856593 30.2137204,6.73041209 30.2137204,6.78178571 L30.2137204,12.8403242 C30.2137204,12.8916978 30.1715347,12.933544 30.1197443,12.933544 L28.5223385,12.933544 C28.470548,12.933544 28.4283623,12.8916978 28.4283623,12.8403242 L28.4283623,6.78178571 C28.4283623,6.73041209 28.470548,6.68856593 28.5223385,6.68856593 L30.1197443,6.68856593 Z M35.1153759,6.56937912 C35.1662247,6.57012637 35.2067154,6.61234615 35.2067154,6.66278571 L35.2067154,8.3314011 C35.2067154,8.38277473 35.164718,8.42462088 35.1127393,8.42462088 C34.5176199,8.42462088 34.0498109,8.6034011 33.7091239,8.96058791 C33.3686252,9.31796154 33.1981875,9.87335714 33.1981875,10.6265879 L33.1981875,12.8403242 C33.1981875,12.8916978 33.1561902,12.933544 33.1043997,12.933544 L31.5069939,12.933544 C31.4550151,12.933544 31.4130178,12.8916978 31.4130178,12.8403242 L31.4130178,6.78178571 C31.4130178,6.73041209 31.4550151,6.68856593 31.5069939,6.68856593 L33.1043997,6.68856593 C33.1561902,6.68856593 33.1981875,6.73041209 33.1981875,6.78178571 L33.1981875,7.54360989 C33.1981875,7.63925824 33.3256862,7.67232418 33.3735218,7.58937912 C33.5292698,7.31906044 33.7196703,7.09451099 33.9441584,6.91573077 C34.2426597,6.67829121 34.6330655,6.56284066 35.1153759,6.56937912 Z M39.0122777,8.07505604 C38.8007844,8.07505604 38.603039,8.11578132 38.4190416,8.19741868 C38.2350443,8.27905604 38.0727048,8.39544066 37.9316464,8.54694615 C37.7907764,8.69826484 37.6790973,8.8791 37.5969859,9.0887044 C37.5146862,9.29830879 37.4736305,9.53537473 37.4736305,9.79952857 L37.4736305,9.82269341 C37.4736305,10.0790011 37.5146862,10.3140121 37.5969859,10.5275396 C37.6790973,10.7414407 37.7907764,10.9237703 37.9316464,11.075089 C38.0727048,11.2265945 38.2350443,11.3431659 38.4190416,11.4246165 C38.603039,11.5062538 38.8007844,11.5469791 39.0122777,11.5469791 C39.2237711,11.5469791 39.4213281,11.5062538 39.6053255,11.4246165 C39.7891345,11.3431659 39.9499674,11.2265945 40.0870708,11.075089 C40.2237976,10.9237703 40.3335934,10.7414407 40.4158931,10.5275396 C40.4980045,10.3140121 40.5390602,10.0790011 40.5390602,9.82269341 L40.5390602,9.79952857 C40.5390602,9.54303407 40.4980045,9.30820989 40.4158931,9.0944956 C40.3335934,8.88096813 40.2237976,8.69826484 40.0870708,8.54694615 C39.9499674,8.39544066 39.7891345,8.27905604 39.6053255,8.19741868 C39.4213281,8.11578132 39.2237711,8.07505604 39.0122777,8.07505604 Z M67.5817361,8.07505604 C67.3702427,8.07505604 67.1724973,8.11578132 66.9886883,8.19741868 C66.804691,8.27905604 66.6421631,8.39544066 66.5012931,8.54694615 C66.3602347,8.69826484 66.2485557,8.8791 66.1664443,9.0887044 C66.0841446,9.29830879 66.0430889,9.53537473 66.0430889,9.79952857 L66.0430889,9.82269341 C66.0430889,10.0790011 66.0841446,10.3140121 66.1664443,10.5275396 C66.2485557,10.7414407 66.3602347,10.9237703 66.5012931,11.075089 C66.6421631,11.2265945 66.804691,11.3431659 66.9886883,11.4246165 C67.1724973,11.5062538 67.3702427,11.5469791 67.5817361,11.5469791 C67.7932294,11.5469791 67.9907865,11.5062538 68.1747838,11.4246165 C68.3587812,11.3431659 68.5194257,11.2265945 68.6565292,11.075089 C68.7934443,10.9237703 68.9030517,10.7414407 68.9853515,10.5275396 C69.0676512,10.3140121 69.1087069,10.0790011 69.1087069,9.82269341 L69.1087069,9.79952857 C69.1087069,9.54303407 69.0676512,9.30820989 68.9853515,9.0944956 C68.9030517,8.88096813 68.7934443,8.69826484 68.6565292,8.54694615 C68.5194257,8.39544066 68.3587812,8.27905604 68.1747838,8.19741868 C67.9907865,8.11578132 67.7932294,8.07505604 67.5817361,8.07505604 Z M24.3995172,9.56647912 L22.4026658,9.56647912 C22.3508753,9.56647912 22.308878,9.60813846 22.308878,9.6596989 L22.308878,11.2674132 C22.308878,11.3187868 22.3508753,11.360633 22.4026658,11.360633 L24.4582759,11.360633 C24.8575332,11.360633 25.1707241,11.2888967 25.3978488,11.1450505 C25.6247851,11.0013912 25.7385358,10.7781495 25.7385358,10.4751385 L25.7385358,10.4517868 C25.7385358,10.1799736 25.632695,9.96457802 25.4213899,9.80522637 C25.2098966,9.64606154 24.8693979,9.56647912 24.3995172,9.56647912 Z M0.419420552,0.186858775 L0.498374801,0.195051648 C1.92534297,0.475458242 3.08187082,0.99237033 3.9675817,1.74616154 C4.9472687,2.5800956 5.43786552,3.67612857 5.43786552,5.03351319 C5.43786552,6.3908978 4.93973554,7.47908462 3.94404058,8.29956813 C3.04345172,9.04084286 1.89087878,9.52805165 0.48651008,9.76119451 C0.277088329,9.79590024 0.0804636441,9.67458699 0.0393547234,9.49670803 L0.0315074271,9.42754615 L0.0315074271,0.526271429 C0.0315074271,0.356126129 0.169359541,0.221918152 0.343073458,0.19273455 L0.419420552,0.186858775 Z M53.6687305,7.99349341 C53.292826,7.99349341 52.9892398,8.11417473 52.7583485,8.35479011 C52.5496801,8.57224066 52.4065501,8.85638352 52.3287703,9.20703187 C52.3157756,9.26569121 52.3600329,9.32173516 52.4204865,9.32173516 L54.8853353,9.32173516 C54.9446589,9.32173516 54.9885395,9.26774615 54.9778048,9.21002088 C54.913208,8.86497692 54.7783645,8.58176813 54.5730859,8.36039451 C54.3457729,8.11585604 54.0444467,7.99349341 53.6687305,7.99349341 Z M60.5496286,7.99349341 C60.1737241,7.99349341 59.8703263,8.11417473 59.639435,8.35479011 C59.4307666,8.57224066 59.2874483,8.85638352 59.2098568,9.20703187 C59.1968621,9.26569121 59.2411194,9.32173516 59.3015729,9.32173516 L61.7664218,9.32173516 C61.8257454,9.32173516 61.869626,9.26774615 61.8587029,9.21002088 C61.7942944,8.86497692 61.6594509,8.58176813 61.4539841,8.36039451 C61.2268594,8.11585604 60.9255332,7.99349341 60.5496286,7.99349341 Z M24.0940477,6.35086374 L22.4026658,6.35086374 C22.3508753,6.35086374 22.308878,6.39252308 22.308878,6.44408352 L22.308878,7.98192967 C22.308878,8.0333033 22.3508753,8.07514945 22.4026658,8.07514945 L23.9767188,8.07514945 C24.3759761,8.07514945 24.693122,8.00714945 24.9281565,7.87114945 C25.1630027,7.73533626 25.2803316,7.51583077 25.2803316,7.21281978 L25.2803316,7.18965495 C25.2803316,6.91784176 25.178634,6.71010549 24.9750504,6.56625934 C24.7712785,6.4226 24.4776737,6.35086374 24.0940477,6.35086374 Z M9.86508276,0.560495604 C10.2400456,0.560495604 10.5910907,0.625693407 10.9172764,0.756089011 C11.2436504,0.886484615 11.5317936,1.07292418 11.7818944,1.31522088 C12.0318069,1.55733077 12.2297406,1.84913297 12.3756955,2.1910011 C12.4923088,2.4641967 12.5622767,2.75939143 12.5855994,3.07639398 L12.5943454,3.31823187 L12.5943454,3.35559451 C12.5943454,3.77779231 12.5214621,4.15683626 12.3756955,4.49216593 C12.2297406,4.82768242 12.0318069,5.1164956 11.7818944,5.35879231 C11.5317936,5.60108901 11.2436504,5.78734176 10.9172764,5.91792418 C10.5910907,6.04813297 10.2400456,6.11351758 9.86508276,6.11351758 C9.49011989,6.11351758 9.13945146,6.04813297 8.81307745,5.91792418 C8.48670345,5.78734176 8.20195013,5.60108901 7.95862918,5.35879231 C7.71587321,5.1164956 7.52132944,4.82450659 7.37537454,4.48301209 C7.25876127,4.20951758 7.18879332,3.9145022 7.16547066,3.59748769 L7.15672467,3.35559451 L7.15672467,3.31823187 C7.15672467,2.90836374 7.22960796,2.5324956 7.37537454,2.1910011 C7.52132944,1.84913297 7.71587321,1.55733077 7.95862918,1.31522088 C8.20195013,1.07292418 8.48670345,0.886484615 8.81307745,0.756089011 C9.13945146,0.625693407 9.49011989,0.560495604 9.86508276,0.560495604 Z M29.317482,3.97493626 C29.4447923,3.97493626 29.5638162,3.99940879 29.6745536,4.04854066 C29.785291,4.09767253 29.8830337,4.16791429 29.96797,4.25907912 C30.052718,4.35024396 30.1199515,4.4599033 30.169482,4.58861758 C30.2190125,4.71714505 30.2436836,4.85856264 30.2436836,5.01287033 L30.2436836,5.01287033 L30.2436836,5.02688132 C30.2436836,5.18585934 30.2190125,5.32858462 30.169482,5.45468352 C30.1199515,5.58096923 30.052718,5.68969451 29.96797,5.78085934 C29.8830337,5.87202418 29.785291,5.94226593 29.6745536,5.99121099 C29.5638162,6.04034286 29.4447923,6.0650022 29.317482,6.0650022 C29.1901716,6.0650022 29.0711477,6.04034286 28.9604103,5.99121099 C28.8496729,5.94226593 28.7530602,5.87202418 28.6705721,5.78085934 C28.5880841,5.68969451 28.5219806,5.57984835 28.4726385,5.45132088 C28.423108,5.32260659 28.3984369,5.18137582 28.3984369,5.02688132 L28.3984369,5.02688132 L28.3984369,5.01287033 C28.3984369,4.85856264 28.423108,4.71714505 28.4726385,4.58861758 C28.5219806,4.4599033 28.5880841,4.35024396 28.6705721,4.25907912 C28.7530602,4.16791429 28.8496729,4.09767253 28.9604103,4.04854066 C29.0711477,3.99940879 29.1901716,3.97493626 29.317482,3.97493626 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- previously, we had if is_button? because we had 2 iframes. Now I'll remove it -->
+      <div id="birdseed-button-frame" class="birdseed-button-frame-desktop">
+        <div class="birdseed-trigger with-custom-text">
+          <svg class="button-bg" width="211px" height="62px" viewBox="0 0 211 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" style="display: none;">
+            <title>background</title>
+            <g id="button-with-text" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-810.000000, -541.000000)" fill="#FFFFFF" id="background">
+                <path d="M1018.25511,549.015495 C1018.28887,549.008491 1018.30841,549.003902 1018.30841,549.003902 C1018.30841,549.003902 1017.39631,546.415173 1014.46732,544.5892 C1008.83049,540.104695 827.059879,539.822587 818.018718,543.742634 C818.017271,543.735629 815.575683,544.591615 813.764749,547.330575 C809.106583,552.319638 808.771117,585.906926 812.758354,595.015781 C812.755219,595.016506 813.631142,597.522147 816.446542,599.341841 C821.849436,603.905809 1004.0937,604.199269 1013.06372,600.22198 C1013.29838,600.13358 1015.6324,599.204652 1017.35603,596.534044 C1021.89386,591.104913 1022.19339,558.089087 1018.25511,549.015495 Z"></path>
+              </g>
+            </g>
+          </svg>
+          <span class="hamburger-custom-text" style="display: none; font-weight: bold;">Une question ? C'est par ici !</span>
+
+          <div class="birdseed-trigger-inner">
+            <svg class="button-bg" width="79px" height="79px" viewBox="0 0 79 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+              <title>Fill 1</title>
+              <desc>Created with Sketch.</desc>
+              <g id="Panel-explore-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <path d="M74.3499043,70.7611212 C80.1406584,63.8433565 80.5228925,21.774804 75.4972221,10.213292 C75.5403081,10.2043671 75.5652364,10.1985197 75.5652364,10.1985197 C75.5652364,10.1985197 74.4012997,6.89997879 70.663592,4.57333492 C63.4703896,-1.14079164 21.7702508,-1.50025196 10.2327518,3.49464619 C10.2309053,3.48572124 10.2290587,3.47864282 10.2290587,3.47864282 C10.2290587,3.47864282 7.11517427,4.57641249 4.8042276,8.0663783 C-1.14009722,14.4234095 -1.56818709,57.2201154 3.51995799,68.8265599 C3.51595715,68.8274832 3.50887874,68.829022 3.50887874,68.829022 C3.50887874,68.829022 4.63373026,72.0201556 8.22648449,74.3387978 C15.1211627,80.1541765 57.425736,80.5281014 68.8724467,75.4602648 C69.1718942,75.3476257 72.1503656,74.1639918 74.3499043,70.7611212" id="Fill-1" fill="#000000"></path>
+              </g>
+            </svg>
+            <button class="hamburger hamburger--spin">
+              <span class="hamburger-box">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 55 55" version="1.1" data-inject-url="https://app.birdseed.io/assets/button-icon-chat-1d87bcd4221e0054639c34af32d595025f8a1073d5d9ceacea13315f9d18a104.svg" class="injectable trigger-icon">
+    <title>buttin-icon-chat</title>
+    <g id="buttin-icon-chat" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M23.3298301,19.0006249 L24.3596249,19.0112396 C24.8272561,19.0190312 25.291804,19.0308582 25.7500721,19.0467205 L26.089521,19.0592813 C26.1332951,19.0609997 26.1770037,19.0627554 26.220644,19.0645485 C26.6289846,19.0813053 27.030956,19.1013356 27.4246309,19.1246303 L27.4526011,19.126311 L27.4526011,19.126311 L27.7781024,19.1465724 L27.7781024,19.1465724 C27.8082084,19.1485474 27.8387163,19.1505548 27.8691675,19.1525823 C28.1272335,19.1697527 28.3804948,19.1883337 28.6290145,19.2083576 C28.7030893,19.2143392 28.7769225,19.2204505 28.850314,19.2266906 C28.8856385,19.2296811 28.921253,19.2327485 28.9567607,19.2358464 C29.0209966,19.2414632 29.0846351,19.2471448 29.1479148,19.2529254 C29.2225808,19.2597357 29.2962447,19.2666472 29.369396,19.2736948 C29.4114548,19.2777574 29.4534005,19.2818598 29.4951726,19.2860073 C29.8512618,19.3213514 30.1950385,19.3600224 30.523827,19.4019772 C30.553762,19.4058038 30.5832044,19.4096031 30.6125238,19.4134288 C30.7918339,19.4368209 30.9665189,19.4612081 31.1362184,19.486588 C31.1993889,19.4960422 31.2611003,19.5055084 31.3221184,19.5151089 C31.6038963,19.5594173 31.8725345,19.6069151 32.1242604,19.6573105 C32.1636663,19.6652008 32.2030003,19.6732312 32.2419049,19.6813338 C32.2856364,19.6904391 32.3290852,19.6996941 32.3719737,19.7090417 C32.4087534,19.7170604 32.4447722,19.7250664 32.4803801,19.733139 C32.5329233,19.7450494 32.584618,19.7571176 32.6353945,19.7693311 C32.6652651,19.7765181 32.6945305,19.7836825 32.7234799,19.7908963 C32.7778356,19.8044377 32.8314746,19.8182599 32.8839539,19.8322587 C32.9065133,19.8382779 32.9285814,19.8442528 32.9504383,19.8502596 C33.0941102,19.8897418 33.2287296,19.9306251 33.3535733,19.9728851 C33.3950115,19.9869204 33.4344401,20.0007676 33.4728195,20.0147595 C33.4888928,20.0206152 33.505747,20.0268598 33.5223922,20.033133 C33.5557835,20.0457253 33.5874618,20.0580808 33.6183295,20.0705451 C33.6526662,20.0844094 33.6860656,20.0984372 33.7184381,20.1126002 C33.7382844,20.1212817 33.757905,20.1300878 33.7771287,20.1389455 C33.804129,20.1513837 33.830574,20.1640368 33.8562089,20.1767937 C33.8787279,20.1880046 33.9002333,20.1990883 33.9211275,20.2102493 C33.9242953,20.2119408 33.9277655,20.213805 33.9312187,20.2156714 L34.0447739,20.2816973 C35.369502,20.9337496 35.7579216,21.8623202 35.7579216,21.8623202 C35.8667952,22.06037 35.968508,22.290362 36.0630598,22.5480944 C36.0772528,22.586773 36.0914589,22.6265791 36.1054996,22.6670113 C36.1973735,22.9316239 36.2820438,23.2225511 36.3596528,23.5360886 C36.3939466,23.6746313 36.4268738,23.8176459 36.4584212,23.9647233 C36.4628448,23.9853478 36.4671922,24.0058194 36.4715131,24.0263681 L36.5275093,24.3045967 L36.5275093,24.3045967 L36.5805293,24.5924069 L36.582474,24.603464 L36.582474,24.603464 L36.5805293,24.5924069 C36.6129115,24.7762056 36.6434161,24.964869 36.6720431,25.1578329 C36.683521,25.2352043 36.6946754,25.313111 36.7055291,25.3916702 C36.7303531,25.5713412 36.7536132,25.7545014 36.7752993,25.9406443 C36.7756771,25.943888 36.7759518,25.946249 36.7762262,25.9486104 C36.7841415,26.0165415 36.792722,26.0929345 36.8010409,26.1697941 C36.8207485,26.3518671 36.8390034,26.5367338 36.8557871,26.7238323 C36.8618326,26.7912338 36.867661,26.8586097 36.8733002,26.9262545 C36.8885185,27.1087865 36.902377,27.2935395 36.9148542,27.4799001 C36.9267222,27.657199 36.9373142,27.8354564 36.946663,28.0148565 C36.9506255,28.0908914 36.9543696,28.1672395 36.9578898,28.2437701 L36.9590679,28.2695754 L36.9590679,28.2695754 L36.9602176,28.2951355 C36.9939206,29.0501175 37.0058731,29.8223301 36.9960748,30.5895306 C36.9490493,34.2723127 36.4007958,37.8397189 35.3512863,38.831117 C34.6583385,39.6788233 33.7472603,40.0351115 33.4788143,40.1259921 L33.4099515,40.1480728 C31.2903331,40.8901185 26.1853429,41.2158673 21.4445616,41.1253316 L19.4643108,44.4367197 C19.3918926,44.5578223 19.2981058,44.6647829 19.1875058,44.7524064 C18.7161442,45.1258449 18.0455307,45.0766507 17.632904,44.6578234 L17.5485994,44.5624364 L14.8737594,41.1862002 C14.7429691,41.0211141 14.6599224,40.8245162 14.6320243,40.6176779 C13.3606942,40.4154287 12.3958525,40.1540477 11.915652,39.8337767 C10.6422987,39.183967 10.2436259,38.2896377 10.2436259,38.2896377 C10.2436259,38.2896377 10.2461347,38.2892064 10.2475527,38.2889477 C8.44419906,35.0361903 8.59592378,23.0422243 10.7027268,21.2606382 C11.5217786,20.2825598 12.6254096,19.974905 12.6254096,19.974905 C12.6254096,19.974905 12.626064,19.9768888 12.6267185,19.97939 C13.9611477,19.5225738 16.4340315,19.2255604 19.2488275,19.0883531 L19.0260243,19.0995214 L19.2252411,19.0894436 L19.2252411,19.0894436 L19.4256163,19.0799034 C19.6889676,19.0677518 19.9551404,19.0569855 20.2234915,19.0476044 L20.3555,19.0431659 L20.3555,19.0431659 C20.5380689,19.0370486 20.7218053,19.0316225 20.906297,19.0268357 C21.0698969,19.0226461 21.2341301,19.0189023 21.3988164,19.0156615 C21.5622035,19.0123947 21.7256293,19.0096817 21.8893628,19.0074614 C22.0252002,19.005669 22.1613767,19.004164 22.2976869,19.0029986 L23.3298301,19.0006249 L23.3298301,19.0006249 Z M29.5,32 L15.5,32 L15.35554,32.0068666 C14.5948881,32.0795513 14,32.7203039 14,33.5 C14,34.3284271 14.6715729,35 15.5,35 L15.5,35 L29.5,35 L29.64446,34.9931334 C30.4051119,34.9204487 31,34.2796961 31,33.5 C31,32.6715729 30.3284271,32 29.5,32 L29.5,32 Z M43.1508479,11.2156966 C44.4282923,11.8341716 44.8028481,12.7149257 44.8028481,12.7149257 C46.5204823,15.788239 46.3898453,26.9710188 44.4107268,28.8099183 C43.6589857,29.7144788 42.6410271,30.0291157 42.5386843,30.0590577 C41.9245288,30.2705409 41.0504623,30.4463745 40.0041087,30.586559 C40.0768619,26.7095856 39.5703923,22.7874635 38.5055443,20.6443023 L38.46,20.56 L38.4437064,20.5213212 C38.1211227,19.8415507 37.5487483,19.0820402 36.6523078,18.3877938 L36.4156047,18.2121277 C36.1739298,18.0403038 35.9173496,17.8801484 35.6459556,17.732937 L35.3119407,17.5594695 C32.7053801,16.2760751 25.3671733,15.7871749 19.2826846,16.0725577 C19.5477399,14.1744888 20.0010283,12.6773326 20.6419512,12.1442271 C21.4317684,11.2165147 22.4960074,10.9247025 22.4960074,10.9247025 C22.4960074,10.9247025 22.4966385,10.9265841 22.4972696,10.9289566 C26.4404655,9.60119885 40.6924116,9.69675159 43.1508479,11.2156966 Z M29.5,26 L15.5,26 L15.35554,26.0068666 C14.5948881,26.0795513 14,26.7203039 14,27.5 C14,28.3284271 14.6715729,29 15.5,29 L15.5,29 L29.5,29 L29.64446,28.9931334 C30.4051119,28.9204487 31,28.2796961 31,27.5 C31,26.6715729 30.3284271,26 29.5,26 L29.5,26 Z" id="Combined-Shape" fill="currentColor"></path>
+    </g>
+</svg></span>
+            </button>
+          </div>
+
+          <div class="birdseed-chat-unread hidden"></div>
+        </div>
+        <div class="birdseed-beacon" style="display: none;">
+          <span>
+            <svg class="button-bg" width="79px" height="79px" viewBox="0 0 79 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+              <title>Fill 1</title>
+              <desc>Created with Sketch.</desc>
+              <g id="Panel-explore-3" stroke="none" fill="none" fill-rule="evenodd">
+                <path d="M74.3499043,70.7611212 C80.1406584,63.8433565 80.5228925,21.774804 75.4972221,10.213292 C75.5403081,10.2043671 75.5652364,10.1985197 75.5652364,10.1985197 C75.5652364,10.1985197 74.4012997,6.89997879 70.663592,4.57333492 C63.4703896,-1.14079164 21.7702508,-1.50025196 10.2327518,3.49464619 C10.2309053,3.48572124 10.2290587,3.47864282 10.2290587,3.47864282 C10.2290587,3.47864282 7.11517427,4.57641249 4.8042276,8.0663783 C-1.14009722,14.4234095 -1.56818709,57.2201154 3.51995799,68.8265599 C3.51595715,68.8274832 3.50887874,68.829022 3.50887874,68.829022 C3.50887874,68.829022 4.63373026,72.0201556 8.22648449,74.3387978 C15.1211627,80.1541765 57.425736,80.5281014 68.8724467,75.4602648 C69.1718942,75.3476257 72.1503656,74.1639918 74.3499043,70.7611212" id="Fill-1" fill="none" stroke-width="2" stroke="#000000"></path>
+              </g>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <!-- add panel background shading when proactive message or the panel is open -->
+      <!-- <div id="birdseed-panel-shading" style="display: none;"></div> -->
+    </div>
+  </div>
+
+  <link rel="stylesheet" type="text/css" href="./brands.css">
+  <script async="" id="io.birdseed.script-tag" type="text/javascript" src="./widget.bundle.js.téléchargement"></script>
+
+
+
+
+<script src="./ramda.min.js.téléchargement"></script><script src="./intlTelInput.min.js.téléchargement"></script><script src="./ion.sound.min.js.téléchargement"></script></body></html>

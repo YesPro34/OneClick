@@ -28,7 +28,7 @@ class createDevisRequest extends FormRequest
             'telephone' => 'required|numeric|min:10',
             'email' => 'required|unique:Devis|email',
             'type_demande' => 'required',
-            'status' => 'required',
+            // 'status' => 'required',
             'message' => 'required|min:10',
         ];
     }

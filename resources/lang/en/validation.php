@@ -171,7 +171,7 @@ return [
             'min'=>'Le champ mot de passe  doit avoir au moins :min caracteres'
         ],
         'status' => [
-            'required' => 'Le champ status est obligatoire',
+            // 'required' => 'Le champ status est obligatoire',
        'max'=>'Le champ status  ne doit pas  dépasser  :max caracteres'
         ],
         'message' => [
